@@ -1,0 +1,172 @@
+@import 'variables';
+
+.feedback-modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0px;
+    z-index: 200;
+    background-color: $backgroungColor;
+    padding-top: 40px;
+    width: 440px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  .feedback-modal__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #1B1C21;
+    font-weight: bold;
+    margin-left: 16px;
+    border: 1px solid transparent;
+    position: relative;
+  
+    &::before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 40px;
+      background-color: $highlightColor;
+      border-radius: 2px;
+      top: 0;
+      left: -18px;
+    }
+  }
+  
+  @media screen and (min-width: 310px) {
+    .feedback-modal {
+      width: 320px;
+      height: 676px;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    }
+  
+    .feedback-modal__form {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  
+    .feedback-modal__title {
+      margin-top: 84px;
+      margin-left: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .feedback-modal {
+      width: 440px;
+      height: auto;
+    }
+  
+    .feedback-modal__form {
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-top: 24px;
+    }
+  
+    .feedback-modal__title {
+      margin-top: 40px;
+      margin-left: 32px;
+  
+      &::before {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 40px;
+        background-color: $highlightColor;
+        border-radius: 2px;
+        top: 0;
+        left: -34px;
+      }
+    }
+  }
+  
+  .feedback-modal__form {
+    input {
+      width: 100%;
+      padding: 12px 16px;
+      font-family: "TT Lakes", "Verdana", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #b5b6bc;
+      border: 1px solid $separatorColor;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      border-radius: 8px;
+      border: 1px solid $separatorColor;
+      width: 100%;
+      height: 118px;
+      padding: 12px 16px;
+      box-sizing: border-box;
+    }
+  
+    input:focus {
+      outline: none;
+  
+      /*border-color: $highlightColor;*/
+    }
+  }
+  
+  textarea::placeholder, input::placeholder {
+    font-family: "TT Lakes", "Verdana", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #b5b6bc;
+  }
+  
+  .feedback-modal__button {
+    margin-left: auto;
+  }
+  
+  .feedback-modal__text {
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $titleColor;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $btnColor;
+  }
+  
+  .order-btn {
+    border-radius: 20px;
+    background-color: $btnColor;
+    color: $backgroungColor;
+    border: none;
+    padding: 8px 18px 8px 18px;
+    margin-left: auto;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+    margin-right: 0;
+  
+    img {
+      padding-left: 10px;
+    }
+  }
+  
+  .feedback-modal__close {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    background: url("../img/close.svg") no-repeat center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .feedback-modal__close {
+      position: absolute;
+      top: 32px;
+      left: -64px;
+      background: url("../img/close.svg") no-repeat center;
+    }
+  }

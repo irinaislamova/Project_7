@@ -1,0 +1,57 @@
+@import 'variables';
+
+@media screen and (max-width: 320px) {
+    .page-footer {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      line-height: 16px;
+      color: $titleColor;
+      opacity: 0.72;
+      text-align: center;
+      width: 320px;
+      box-sizing: border-box;
+      margin-top: 57px;
+      margin-bottom: 5px;
+    }
+  
+    .page-footer__copyright {
+      margin-bottom: 16px;
+    }
+  
+    .privacy-policy {
+      text-decoration: none;
+      color: $titleColor;
+      margin-bottom: 16px;
+    }
+  
+    .page-footer__public-rules {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (min-width: 321px) {
+    .page-footer {
+      margin: 83px 33px 21px 23px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: auto;
+    }
+  
+    .page-footer__copyright {
+      flex: 1;
+      text-align: left;
+    }
+  
+    .privacy-policy {
+      flex: 1;
+      margin: 14px 0;
+    }
+  
+    .page-footer__public-rules {
+      width: 330px;
+      flex: 1;
+      text-align: right;
+    }
+  }

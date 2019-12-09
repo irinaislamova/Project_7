@@ -1,0 +1,179 @@
+@import 'variables';
+
+.callback-modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    z-index: 200;
+  
+    /*transform:  translateX(100%);*/
+    background-color: $backgroungColor;
+    padding-top: 40px;
+    width: 440px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  .callback-modal__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #1B1C21;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 0;
+    border: 1px solid transparent;
+    position: relative;
+  
+    &::before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 40px;
+      background-color: $highlightColor;
+      border-radius: 2px;
+      top: 0;
+      left: -18px;
+    }
+  }
+  
+  .callback-modal__form {
+    box-sizing: border-box;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 24px;
+  }
+  
+  @media screen and (min-width: 310px) {
+    .callback-modal {
+      width: 320px;
+      height: 676px;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    }
+  
+    .callback-modal__form {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  
+    .callback-modal__title {
+      margin-top: 84px;
+      margin-left: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .callback-modal {
+      width: 440px;
+    }
+  
+    .callback-modal__form {
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-top: 24px;
+    }
+  
+    .callback-modal__title {
+      margin-left: 32px;
+      margin-top: 40px;
+  
+      &::before {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 40px;
+        background-color: $highlightColor;
+        border-radius: 2px;
+        top: 0;
+        left: -34px;
+      }
+    }
+  }
+  
+  .callback-modal input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: "TT Lakes", "Verdana", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #b5b6bc;
+    border: 1px solid $separatorColor;
+    border-radius: 8px;
+    box-sizing: border-box;
+  
+    &:focus {
+      outline: none;
+  
+      /*border-color: $highlightColor;*/
+    }
+  }
+  
+  textarea::placeholder, input::placeholder {
+    font-family: "TT Lakes", "Verdana", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #b5b6bc;
+  }
+  
+  .callback-modal__button {
+    margin-left: auto;
+  }
+  
+  .callback-modal__text {
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $titleColor;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $btnColor;
+  }
+  
+  .order-btn {
+    border-radius: 20px;
+    background-color: $btnColor;
+    color: $backgroungColor;
+    border: none;
+    padding: 8px 18px 8px 18px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+  
+    img {
+      padding-left: 10px;
+    }
+  }
+  
+  .callback-modal__close {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    background: url("../img/close.svg") no-repeat center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .callback-modal__close {
+      position: absolute;
+      top: 32px;
+      left: -64px;
+      background: url("../img/close.svg") no-repeat center;
+    }
+  }
+  
+  .primary-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $btnColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }

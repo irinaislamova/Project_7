@@ -1,17 +1,118 @@
-$bgColor: lightblue;
-$text: #fff;
+@import "normalize.scss";
+@import "main-menu.scss";
+@import "main.scss";
+@import "left-menu.scss";
+@import "brands.scss";
+@import "tech-repair.scss";
+@import "price.scss";
+@import "price-policy.scss";
+@import "page-footer.scss";
+@import "callback-modal.scss";
+@import "feedback-modal.scss";
+@import 'variables';
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.eot');
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url('../fonts/TTLakes-Bold.eot?#iefix') format("embedded-opentype"), url('../fonts/TTLakes-Bold.woff') format("woff"), url('../fonts/TTLakes-Bold.ttf') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.eot');
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"), url('../fonts/TTLakes-Medium.eot?#iefix') format("embedded-opentype"), url('../fonts/TTLakes-Medium.woff') format("woff"), url('../fonts/TTLakes-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url('../fonts/TTLakes-Regular.eot?#iefix') format("embedded-opentype"), url('../fonts/TTLakes-Regular.woff') format("woff"), url('../fonts/TTLakes-Regular.ttf') format("truetype");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  padding: 1rem;
+  background: $mainBg;
+  padding: 0;
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  font-family: "TT Lakes", "Times New Roman", sans;
+  font-weight: normal;
+
+  /*position: relative; 
+  max-width: 1440px;  
+  width: 100%;  */
+}
+
+.container {
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  background-color: $backgroundColor;
+  opacity: 0.96;
+}
+
+.list-reset {
+  padding-left: 0;
+
+  /*стандартные стили для списка*/
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.primary-btn {
+  /*стандартный стиль для кнопки*/
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $btnColor;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+
+.primary-btn {
+  /*стандартный стиль для кнопки*/
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $btnColor;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.swiper-container {
+  width: 600px;
+  height: 300px;
 }

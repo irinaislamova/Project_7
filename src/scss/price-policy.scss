@@ -1,0 +1,45 @@
+@import 'variables';
+
+.price-policy {
+  color: #1b1c21;
+}
+
+.price-policy__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.price-policy__link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1b1c21;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/price-policy.svg");
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 7px;
+    top: 6px;
+    right: -13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .price-policy {
+    max-width: 320px;
+    box-sizing: border-box;
+    padding-left: 16px;
+  }
+}
+
+@media screen and (min-width: 321px) {
+  .price-policy {
+    width: 420px;
+    padding-left: 24px;
+  }
+}
