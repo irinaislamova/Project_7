@@ -6,7 +6,7 @@
     top: 0;
     right: 0px;
     z-index: 200;
-    background-color: $backgroungColor;
+    background-color: $backgroundColor;
     padding-top: 40px;
     width: 440px;
     height: auto;
@@ -140,7 +140,7 @@
   .order-btn {
     border-radius: 20px;
     background-color: $btnColor;
-    color: $backgroungColor;
+    color: $backgroundColor;
     border: none;
     padding: 8px 18px 8px 18px;
     margin-left: auto;

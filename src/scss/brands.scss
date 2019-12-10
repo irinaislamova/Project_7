@@ -2,7 +2,7 @@
 
 .brands {
     background-color: #f8f8f8;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
   
   .brands__title {
@@ -11,7 +11,7 @@
     line-height: 24px;
     color: $titleColor;
     display: block;
-    background: linear-gradient(90deg, $mainBg 0%, $backgroungColor 98.61%);
+    background: linear-gradient(90deg, $mainBg 0%, $backgroundColor 98.61%);
     padding: 16px;
     margin-bottom: 24px;
   }
@@ -22,6 +22,7 @@
     height: 100px;
     overflow: hidden;
     list-style: none;
+    box-sizing: border-box;
   }
   
   .brands__item {
@@ -33,7 +34,7 @@
     padding-left: 16px;
     padding-right: 16px;    
     flex-shrink: 0;
-    background-color: $backgroungColor;
+    background-color: $backgroundColor;
     border: 1px solid $separatorColor;
     border-radius: 6px;
     margin-bottom: 16px;
@@ -89,7 +90,9 @@
       overflow-x: visible;
       overflow-y: hidden;
       background-color: blue;
-      padding-right: 0;
+      padding-right: 24px;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     .brands__item {

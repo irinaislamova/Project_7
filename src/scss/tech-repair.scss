@@ -6,8 +6,9 @@
     line-height: 24px;
     color: $titleColor;
     display: block;
-    background: linear-gradient(90deg, $mainBg 0%, $backgroungColor 98.61%);
+    background: linear-gradient(90deg, $mainBg 0%, $backgroundColor 98.61%);
     padding: 16px;
+    margin-top: 0;
     padding-left: 32px;
     margin-bottom: 24px;
   }
@@ -23,7 +24,7 @@
     margin-bottom: 24px;
     width: 240px;
     height: 160px;
-    background: backgroungColor;
+    background: backgroundColor;
     border: 1px solid $separatorColor;
     border-radius: 6px;
     box-sizing: border-box;
@@ -65,13 +66,15 @@
     }
   }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 321px) {
     .tech-container {
       background-color: blue;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       width: 816px;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     .tech-repair__title {
@@ -94,6 +97,7 @@
   
   @media screen and (min-width: 1120px) {
     .tech-container {
+      flex-wrap: wrap;
       background-color: darkblue;
       width: 1120px;
     }

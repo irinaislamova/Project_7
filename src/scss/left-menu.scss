@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .menu {
-    width: 320px;
+    width: 310px;    
     min-height: 830px;
     padding: 19px 24px 34px;
     box-sizing: border-box;
@@ -21,7 +21,7 @@
   .left-btn--close {
     display: block;
     border-radius: 50%;
-    background: $btnColor url("../img/close.svg") no-repeat center;
+    background: #ff3e79 url("../img/close.svg") no-repeat center;
     border: none;
     width: 40px;
     height: 40px;
@@ -36,7 +36,7 @@
     width: 40px;
     height: 40px;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 24px;
   }
  
   
@@ -135,6 +135,7 @@
   @media screen and (max-width: 320px) {
     .left-menu {
       display: none;
+      width: 310px;
       padding-left: 16px;
       position: absolute;
       top: 0;
@@ -145,6 +146,8 @@
   
   @media screen and (min-width: 321px) {
     .left-menu {
+      width: 310px;
+      box-sizing: border-box;
       position: absolute;
       top: 0;
       left: 0;
@@ -161,6 +164,8 @@
   
   @media screen and (min-width: 1120px) {
     .left-menu {
+      width: 310px;
+      box-sizing: border-box;
       position: static;
       padding-left: 27px;
       display: block;
