@@ -6,14 +6,14 @@
   <meta name="keywords" content="ремонт, сервис, ПК, планшет, телефон">
   <meta name="description" content="Услуги по ремонту ПК, планшетов и телефонов">
   <title>CPS - Услуги и сервисы</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css"> 
    
-  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   
   <style>
-    html, body {
+    /*html, body {
       position: relative;
-      height: 100%;
+      height: 100%;     
     }
     body {     
       margin: 0;
@@ -25,14 +25,13 @@
     }
     .swiper-slide {
       text-align: center;
-      /*wdth: 100px;*/
+      wdth: 100px;
       font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */      
+      background: #DDD;
+      /* Center slide text vertically      
       display: flex;      
       justify-content: flex-start;      
-      align-items: center;
-    }
+      align-items: center;}*/    
   </style>
 <link href="style.css" rel="stylesheet"></head>
   <body>
@@ -126,133 +125,91 @@
       </div>
     </main>
     
-      <section class="brands">
-        <h1 class="brands__title">Ремонт техники различных брендов</h1>
-        <div class="brands__container">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">  
-        <li class="brands__item">
-          <img class="brands__image" src="images/Lenovo.svg" alt="Lenovo">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-      <div class="swiper-slide">
-        <li class="brands__item">
-          <img class="brands__image" src="images/SAMSUNG.svg" alt="SAMSUNG">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-      <div class="swiper-slide">
-        <li class="brands__item">
-          <img class="brands__image" src="images/Apple.svg" alt="">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-      <div class="swiper-slide">
-        <li class="brands__item">
-          <img class="brands__image" src="images/ViewSonic.svg" alt="">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-      <div class="swiper-slide">
-        <li class="brands__item">
-          <img class="brands__image" src="images/BOSCH.svg" alt="">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-      <div class="swiper-slide">
-        <li class="brands__item">
-          <img class="brands__image" src="images/hp.svg" alt="">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-      <div class="swiper-slide">
-        <li class="brands__item">
-          <img class="brands__image" src="images/ACER.svg" alt="">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-      <div class="swiper-slide">
-        <li class="brands__item">
-          <img class="brands__image" src="images/SONY.svg" alt="">  
-          <a class="arrow-btn" href="#"></a>
-        </li>
-      </div>
-        </div>
+    <section class="brands">
+      <h1 class="brands__title">Ремонт техники различных брендов</h1>
+      <div class="brands__container">         
+       <li class="brands__item">
+        <img class="brands__image" src="img/Lenovo.svg" alt="Lenovo">  
+        <a class="arrow-btn" href="#"></a>
+      </li>  
+      <li class="brands__item">
+        <img class="brands__image" src="img/SAMSUNG.svg" alt="SAMSUNG">  
+        <a class="arrow-btn" href="#"></a>
+      </li>      
+      <li class="brands__item">
+        <img class="brands__image" src="img/Apple.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>      
+      <li class="brands__item">
+        <img class="brands__image" src="img/ViewSonic.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>     
+      <li class="brands__item">
+        <img class="brands__image" src="img/BOSCH.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>      
+      <li class="brands__item">
+        <img class="brands__image" src="img/hp.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>      
+      <li class="brands__item">
+        <img class="brands__image" src="img/ACER.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>      
+      <li class="brands__item">
+        <img class="brands__image" src="img/SONY.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>   
+    </div>  
     
-    <div clas="swiper-pagination"></div>
-  </div>
-        </div>
-        <div class="pagination brands-pagination"></div>
+        <div class="pagination brands-pagination" style="display: block; width: 130px; height: 18px;  box-sizing: border-box; margin-left: auto; margin-right: auto;"></div>
         <button class="link-more brands__link--open" href="#">Показать все</button>     
-        <button class="link-hide brands__link--hide" href="#" style="display: none;">Скрыть</button>     
+    <button class="link-hide brands__link--hide" href="#" style="display: none;">Скрыть</button> 
+             
       </section>
     
       <section class="tech-repair" id="repair-devices">
         <h2 class="tech-repair__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
-        <div class="tech-container">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">            
-              <div class="swiper-slide">
+        <div class="tech-container">          
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ноутбуков</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>              
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт планшетов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>              
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ПК </h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>                           
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>              
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ноутбуков</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>              
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт планшетов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>              
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ПК</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>              
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
-              <div class="swiper-slide">
+                </div>              
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>
-              </div>
+                </div>              
             </div>
             
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>        
+            <div class="pagination tech-repair-pagination" style="display: block; width: 150px; box-sizing: border-box; margin-left: auto; margin-right: auto;"></div>                
         <button class="link-more tech-repair__arrows-link" href="#">Показать все (9)</button>
         <button class="link-hide tech-repair__arrows-link--hide">Скрыть</button>
       </section>
@@ -275,8 +232,8 @@
               <div class="prices__t-cell--title">Срок</div>
               <div class="prices__wrapper">
                 <div class="prices__t-cell">30 мин</div>
-                <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="images/price-arrow.svg" alt=""></a></div>
-            </div>
+                <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="img/price-arrow.svg" alt=""></a></div>
+              </div>
             </div>
             <div class="prices__t-row">
               <div class="prices__t-cell--title">Ремонтные услуги</div>
@@ -285,10 +242,10 @@
               <div class="prices__t-cell">1 000 ₽</div>
               <div class="prices__t-cell--title">Срок</div>
               <div class="prices__wrapper">
-              <div class="prices__t-cell">30-120 мин</div>
-              <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="images/price-arrow.svg" alt=""></a></div>
+                <div class="prices__t-cell">30-120 мин</div>
+                <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="img/price-arrow.svg" alt=""></a></div>
+              </div>
             </div>
-          </div>
             <div class="prices__t-row">
               <div class="prices__t-cell--title">Ремонтные услуги</div>
               <div class="prices__t-cell">Замена полифонического динамика</div>
@@ -296,9 +253,9 @@
               <div class="prices__t-cell">1 000 ₽</div>
               <div class="prices__t-cell--title">Срок</div>
               <div class="prices__wrapper">
-              <div class="prices__t-cell">30-120 мин</div>
-              <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="images/price-arrow.svg" alt=""></a></div>
-            </div>
+                <div class="prices__t-cell">30-120 мин</div>
+                <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="img/price-arrow.svg" alt=""></a></div>
+              </div>
             </div>
             <div class="prices__t-row">
               <div class="prices__t-cell--title">Ремонтные услуги</div>
@@ -307,9 +264,9 @@
               <div class="prices__t-cell">1 000 ₽</div>
               <div class="prices__t-cell--title">Срок</div>
               <div class="prices__wrapper">
-              <div class="prices__t-cell">30-120 мин</div>
-              <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="images/price-arrow.svg" alt=""></a></div>
-            </div>
+                <div class="prices__t-cell">30-120 мин</div>
+                <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="img/price-arrow.svg" alt=""></a></div>
+              </div>
             </div>
             <div class="prices__t-row">
               <div class="prices__t-cell--title">Ремонтные услуги</div>
@@ -318,12 +275,14 @@
               <div class="prices__t-cell">1 000 ₽</div>
               <div class="prices__t-cell--title">Срок</div>
               <div class="prices__wrapper">
-              <div class="prices__t-cell">30-120 мин</div>
-              <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="images/price-arrow.svg" alt=""></a></div>
-            </div>
+                <div class="prices__t-cell">30-120 мин</div>
+                <div class="prices__t-cell"><a class="order-btn prices_btn" href="#">Заказать<img src="img/price-arrow.svg" alt=""></a></div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="pagination prices-pagination" style="width: 68px; height: 18px; box-sizing: border-box; margin-left: auto; margin-right: auto; display: flex; 
+        justify-content: space-between; align-items: center; margin-top: 16px;"></div>
       </section>
       
     <section class="price-policy">
@@ -348,7 +307,7 @@
       <form class="callback-modal__form" action="http://echo.htmlacademy.ru">
         <input class="callback-modal__phone-number" type="tel" placeholder="Телефон">
         <p class="callback-modal__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
-        <button class="order-btn callback-modal__button" type="submit">Отправить<img src="images/price-arrow.svg" alt=""></button>
+        <button class="order-btn callback-modal__button" type="submit">Отправить<img src="img/price-arrow.svg" alt=""></button>
 
       </form>
       <button class="primary-btn primary-btn--close callback-modal__close" type="button"></button>
@@ -370,19 +329,8 @@
   </div>
   <div class="overlay"></div>  
   
-  <script src="js/swiper.min.js"></script>
-  
-  <script>
-    
-    if(window.innerWidth <= 360){
-      var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-    }
-  </script>
+  <script src="js/swiper.min.js"></script>  
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/swiper-init.js"></script>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
-
