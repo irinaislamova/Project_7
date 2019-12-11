@@ -24,12 +24,10 @@
     margin-bottom: 24px;
     width: 240px;
     height: 160px;
-    background: backgroundColor;
+    background-color: $backgroundColor;
     border: 1px solid $separatorColor;
     border-radius: 6px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
     flex-shrink: 0;
   }
   

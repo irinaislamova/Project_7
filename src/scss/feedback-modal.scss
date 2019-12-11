@@ -170,3 +170,13 @@
       background: url("../img/close.svg") no-repeat center;
     }
   }
+  .primary-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $btnColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }

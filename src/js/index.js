@@ -9,6 +9,7 @@ import '../scss/normalize.scss';
 import '../scss/page-footer.scss';
 import '../scss/price-policy.scss';
 import '../scss/tech-repair.scss';
+import '../scss/swiper.min.scss';
 
 /*Ремонт техники*/
 let tech_open = document.querySelector('.tech-repair__arrows-link');
@@ -136,4 +137,36 @@ left_close.addEventListener('click', function(){
 	left_menu.style.display = 'none';
 	overlay.style.display = 'none';
 });
+/*swiper*/
+if (window.innerWidth < 426) {	
+	var techSlider = new Swiper('.tech-repair', {
+		slidesPerView: 'auto',
+		wrapperClass: 'tech-container',
+		slideClass: 'tech-container__item',
+		pagination: {
+			el: '.tech-repair-pagination',
+			clickable: true,
+		}
+	});
+
+	var brandsSlider = new Swiper('.brands', {
+		slidesPerView: 'auto',
+		wrapperClass: 'brands__container',
+		slideClass: 'brands__item',
+		pagination: {
+			el: '.brands-pagination',
+			clickable: true,
+		}
+	});
+
+	var pricesSlider = new Swiper('.prices__table', {
+		slidesPerView: 'auto',
+		wrapperClass: 'prices__t-body',
+		slideClass: 'prices__t-row',
+		pagination: {
+			el: '.prices-pagination',
+			clickable: true,
+		}
+	});
+}
 
