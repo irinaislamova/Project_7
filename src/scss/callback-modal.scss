@@ -2,7 +2,8 @@
 
 .callback-modal {
     position: fixed;
-    display: none;
+    display: block;
+    transform: translateX(120%);
     top: 0;
     right: 0;
     z-index: 200;  
@@ -13,6 +14,9 @@
     height: auto;
     box-sizing: border-box;
   }
+  .callback-modal.transform{
+    transform: none;
+}
   
   .callback-modal__title {
     font-size: 24px;

@@ -33,8 +33,7 @@
   
   @media screen and (max-width: 320px) {
     .tech-container {
-      flex-wrap: nowrap;
-      background-color: lightblue;
+      flex-wrap: nowrap;     
       max-width: 320px;
       overflow-x: scroll;
       box-sizing: border-box;
@@ -65,8 +64,7 @@
   }
   
   @media screen and (min-width: 321px) {
-    .tech-container {
-      background-color: blue;
+    .tech-container {     
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -95,8 +93,7 @@
   
   @media screen and (min-width: 1120px) {
     .tech-container {
-      flex-wrap: wrap;
-      background-color: darkblue;
+      flex-wrap: wrap;      
       width: 1120px;
     }
   

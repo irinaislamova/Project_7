@@ -44,13 +44,10 @@
   @media screen and (max-width: 320px) {
     .brands__container {
       max-width: 320px;
-      overflow-x: scroll;
-      flex-wrap: nowrap;
-  
-      /*align-items: center;*/
+      overflow-x: auto;
+      flex-wrap: nowrap;      
       height: 80px;
-      margin-bottom: 16px;
-      background-color: lightblue;
+      margin-bottom: 16px;      
       padding: 16px;
       padding-left: 0;
       box-sizing: border-box;
@@ -88,8 +85,7 @@
       height: 156px;
       margin-bottom: 8px;
       overflow-x: visible;
-      overflow-y: hidden;
-      background-color: blue;
+      overflow-y: hidden;     
       padding-right: 24px;
       margin-left: auto;
       margin-right: auto;
@@ -117,8 +113,7 @@
       width: 1120px;
       height: 176px;
       margin-bottom: 8px;
-      overflow: hidden;
-      background-color: darkblue;
+      overflow: hidden;      
       padding-right: 0;
     }
   
