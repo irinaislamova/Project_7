@@ -908,13 +908,11 @@ template, [hidden] {
 @media screen and (max-width: 320px) {
   .brands__container {
     max-width: 320px;
-    overflow-x: scroll;
+    overflow-x: auto;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    /*align-items: center;*/
     height: 80px;
     margin-bottom: 16px;
-    background-color: lightblue;
     padding: 16px;
     padding-left: 0;
     -webkit-box-sizing: border-box;
@@ -949,7 +947,6 @@ template, [hidden] {
     margin-bottom: 8px;
     overflow-x: visible;
     overflow-y: hidden;
-    background-color: blue;
     padding-right: 24px;
     margin-left: auto;
     margin-right: auto; }
@@ -971,7 +968,6 @@ template, [hidden] {
     height: 176px;
     margin-bottom: 8px;
     overflow: hidden;
-    background-color: darkblue;
     padding-right: 0; }
   .brands__item {
     width: 240px;
@@ -1032,7 +1028,6 @@ template, [hidden] {
   .tech-container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    background-color: lightblue;
     max-width: 320px;
     overflow-x: scroll;
     -webkit-box-sizing: border-box;
@@ -1056,7 +1051,6 @@ template, [hidden] {
 
 @media screen and (min-width: 321px) {
   .tech-container {
-    background-color: blue;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1083,7 +1077,6 @@ template, [hidden] {
   .tech-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: darkblue;
     width: 1120px; }
   .tech-container__item {
     margin-left: 32px; }
@@ -1379,7 +1372,10 @@ template, [hidden] {
 
 .callback-modal {
   position: fixed;
-  display: none;
+  display: block;
+  -webkit-transform: translateX(120%);
+      -ms-transform: translateX(120%);
+          transform: translateX(120%);
   top: 0;
   right: 0;
   z-index: 200;
@@ -1390,6 +1386,11 @@ template, [hidden] {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.callback-modal.transform {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
 
 .callback-modal__title {
   font-size: 24px;
@@ -1554,7 +1555,10 @@ a {
 
 .feedback-modal {
   position: fixed;
-  display: none;
+  display: block;
+  -webkit-transform: translateX(120%);
+      -ms-transform: translateX(120%);
+          transform: translateX(120%);
   top: 0;
   right: 0px;
   z-index: 200;
@@ -1564,6 +1568,11 @@ a {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.feedback-modal.transform {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
 
 .feedback-modal__title {
   font-size: 24px;
@@ -2445,13 +2454,11 @@ body {
 @media screen and (max-width: 320px) {
   .brands__container {
     max-width: 320px;
-    overflow-x: scroll;
+    overflow-x: auto;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    /*align-items: center;*/
     height: 80px;
     margin-bottom: 16px;
-    background-color: lightblue;
     padding: 16px;
     padding-left: 0;
     -webkit-box-sizing: border-box;
@@ -2486,7 +2493,6 @@ body {
     margin-bottom: 8px;
     overflow-x: visible;
     overflow-y: hidden;
-    background-color: blue;
     padding-right: 24px;
     margin-left: auto;
     margin-right: auto; }
@@ -2508,7 +2514,6 @@ body {
     height: 176px;
     margin-bottom: 8px;
     overflow: hidden;
-    background-color: darkblue;
     padding-right: 0; }
   .brands__item {
     width: 240px;
@@ -2533,7 +2538,10 @@ body {
 
 .callback-modal {
   position: fixed;
-  display: none;
+  display: block;
+  -webkit-transform: translateX(120%);
+      -ms-transform: translateX(120%);
+          transform: translateX(120%);
   top: 0;
   right: 0;
   z-index: 200;
@@ -2544,6 +2552,11 @@ body {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.callback-modal.transform {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
 
 .callback-modal__title {
   font-size: 24px;
@@ -2708,7 +2721,10 @@ a {
 
 .feedback-modal {
   position: fixed;
-  display: none;
+  display: block;
+  -webkit-transform: translateX(120%);
+      -ms-transform: translateX(120%);
+          transform: translateX(120%);
   top: 0;
   right: 0px;
   z-index: 200;
@@ -2718,6 +2734,11 @@ a {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.feedback-modal.transform {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
 
 .feedback-modal__title {
   font-size: 24px;
@@ -3874,7 +3895,6 @@ template, [hidden] {
   .tech-container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    background-color: lightblue;
     max-width: 320px;
     overflow-x: scroll;
     -webkit-box-sizing: border-box;
@@ -3898,7 +3918,6 @@ template, [hidden] {
 
 @media screen and (min-width: 321px) {
   .tech-container {
-    background-color: blue;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3925,7 +3944,6 @@ template, [hidden] {
   .tech-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: darkblue;
     width: 1120px; }
   .tech-container__item {
     margin-left: 32px; }
