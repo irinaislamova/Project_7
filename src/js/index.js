@@ -1,18 +1,19 @@
-import '../scss/style.scss';
+
 import '../scss/brands.scss';
 import '../scss/callback-modal.scss';
 import '../scss/feedback-modal.scss';
 import '../scss/dropdown-menu.scss';
-import '../scss/main-menu.scss';
-import '../scss/main.scss';
+import '../scss/menu.scss';
+import '../scss/about-us.scss';
 import '../scss/normalize.scss';
 import '../scss/page-footer.scss';
 import '../scss/price-policy.scss';
+import '../scss/price.scss';
 import '../scss/tech-repair.scss';
+
+import '../scss/style.scss';
 import '../scss/swiper.min.scss';
-
-
-
+import '../js/swiper.min.js';
 
 /*Ремонт техники*/
 let tech_open = document.querySelector('.tech-repair__arrows-link');
@@ -77,6 +78,7 @@ document.addEventListener('keydown', function(e) {
 	}
 });
 overlay_callback.addEventListener('click', function(){
+	callback.classList.remove('transform');
 	overlay_callback.style.display = 'none';
 });
 
@@ -109,6 +111,7 @@ document.addEventListener('keydown', function(e) {
 	}
 });
 overlay_feedback.addEventListener('click', function(){
+	feedback.classList.remove('transform');
 	overlay_feedback.style.display = 'none';
 });
 
@@ -138,8 +141,8 @@ let dropdown_close = document.querySelector('.dropdown-menu__close');
 let main = document.querySelector('.main-menu');
 let overlay= document.querySelector('.overlay');
 burger_menu.addEventListener('click', function(){	
+	overlay.style.dislay = 'block';
 	dropdown_menu.style.display = 'block';	
-	overlay.style.display = 'block';
 });
 dropdown_close.addEventListener('click', function(){	
 	dropdown_menu.style.display = 'none';
@@ -147,8 +150,9 @@ dropdown_close.addEventListener('click', function(){
 });
 overlay.addEventListener('click', function(){
 	overlay.style.display = 'none';
+	dropdown_menu.style.display = 'none';
 });
-/*swiper*/
+/*swiper
 if (window.innerWidth < 426) {	
 	console.log('5');
 	var techSlider = new Swiper('.tech-repair', {
@@ -181,3 +185,11 @@ if (window.innerWidth < 426) {
 		}
 	});
 }
+if (window.innerWidth < 426) {
+    var swiper = new Swiper('.swiper-container', {    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+}; */

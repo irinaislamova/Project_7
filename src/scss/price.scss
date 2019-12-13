@@ -6,15 +6,9 @@
       box-sizing: border-box;
     }
   
-    .prices__title {
-      text-transform: uppercase;
-      font-size: 16px;
-      line-height: 24px;
-      color: $titleColor;
-      display: block;
-      background: linear-gradient(90deg, $mainBg 0%, $backgroundColor 98.61%);
+    .prices__title {     
       padding: 16px;
-      padding-left: 24px;
+      padding-left: 16px;
       margin-bottom: 16px;
       margin-top: 16px;
     }

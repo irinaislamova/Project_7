@@ -87,3 +87,11 @@ body {
   width: 600px;
   height: 300px;
 }
+.page-title{
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  color: $titleColor;
+  display: block;
+  background: linear-gradient(90deg, $mainBg 0%, $backgroundColor 98.61%);
+}

@@ -136,7 +136,8 @@
   }
   
   @media screen and (min-width: 321px) {
-    .dropdown-menu {    
+    .dropdown-menu {  
+      display: none;  
       padding-left: 24px;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
     }
@@ -147,7 +148,8 @@
   }
   
   @media screen and (min-width: 1120px) {
-    .dropdown-menu {      
+    .dropdown-menu { 
+      display: block;     
       position: static;
       padding-left: 27px;      
       box-shadow: none;

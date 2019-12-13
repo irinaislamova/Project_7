@@ -1,26 +1,26 @@
 @import 'variables.scss';
 
-.main {
+.about-us {
   width: 100%;
   padding: 0px 32px 42px 32px;
 }
 
-.main-nav {
+.about-us-nav {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
 }
 
-.main-content {
+.about-us-content {
   display: flex;
   align-items: flex-start;
 }
 
-.main-text {
+.about-us-wrapper__text {
   flex-grow: 1;
 }
 
-.main-content__img {
+.about-us-content__img {
   width: 50%;
   margin-left: 32px;
   flex-shrink: 0;
@@ -86,27 +86,27 @@
 }
 
 @media screen and (max-width: 320px) {
-  .main {
+  .about-us {
     padding-left: 0;
     padding-right: 0;
     max-width: 320px;
   }
 
-  .main-nav {
+  .about-us-nav {
     margin-left: 16px;
     flex-wrap: nowrap;
     overflow-x: auto;
   }
 
-  .main-nav__link {
+  .about-us-nav__link {
     white-space: nowrap;
   }
 
-  .main-content {
+  .about-us-content {
     flex-direction: column;
   }
 
-  .main-text {
+  .about-us-wrapper__text {
     width: 320px;
     box-sizing: border-box;
     padding-left: 16px;
@@ -117,31 +117,31 @@
     font-size: 14px;
   }
 
-  .main-content__img {
+  .about-us-content__img {
     width: 320px;
     margin: 0;
   }
 
-  .main-menu__border768 {
+  .about-us-menu__border768 {
     display: none;
   }
 
-  .main-content__button--open {
+  .about-us-content__button--open {
     margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .main {
+  .about-us {
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  .main-content {
+  .about-us-content {
     flex-direction: row;
   }
 
-  .main-text {
+  .about-us-wrapper__text {
     padding: 0;
     overflow: hidden;
     height: 153px;
@@ -149,28 +149,28 @@
     font-size: 14px;
   }
 
-  .main-content__img {
+  .about-us-content__img {
     width: 50%;
     margin-left: 48px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .main {
+  .about-us {
     padding-left: 34px;
     padding-right: 29px;
   }
 
-  .main-title {
+  .about-us-title {
     margin-left: 30px;
   }
 
-  .main-text {
+  .about-us-wrapper__text {
     overflow: hidden;
     height: 153px;
   }
 
-  .main-content__img {
+  .about-us-content__img {
     margin-left: 36px;
   }
 }

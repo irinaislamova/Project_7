@@ -4,13 +4,14 @@
     position: fixed;
     display: block;
     transform: translateX(120%);
+    transition-duration: 3s;
     top: 0;
     right: 0px;
     z-index: 200;
     background-color: $backgroundColor;
     padding-top: 40px;
     width: 440px;
-    height: auto;
+    height: 100vh;
     box-sizing: border-box;
   }
   .feedback-modal.transform{

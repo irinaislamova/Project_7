@@ -5,13 +5,7 @@
     margin-bottom: 16px;
   }
   
-  .brands__title {
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 24px;
-    color: $titleColor;
-    display: block;
-    background: linear-gradient(90deg, $mainBg 0%, $backgroundColor 98.61%);
+  .brands__title {   
     padding: 16px;
     margin-bottom: 24px;
   }
@@ -29,12 +23,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 240px;
-    height: 72px;
     padding-left: 16px;
     padding-right: 16px;    
     flex-shrink: 0;
-    background-color: red;
+    background-color: $backgroundColor;
     border: 1px solid $separatorColor;
     border-radius: 6px;
     margin-bottom: 16px;
@@ -115,9 +107,7 @@
       padding-right: 0;
     }
   
-    .brands__item {
-      width: 240px;
-      height: 72px;
+    .brands__item {      
       margin-bottom: 16px;
       margin-left: 32px;
   

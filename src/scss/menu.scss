@@ -91,7 +91,7 @@
   }
   
   @media screen and (max-width: 320px) {
-    .main-menu{
+    .about-us {
       padding-left: 0;
       padding-right: 0;
       max-width: 320px;
@@ -101,7 +101,7 @@
     .menu {
       background-color: $backgroundColor;
       width: 320px;
-   }
+    }
   
     .menu__phone, .menu__chat, .menu__profile, .main-menu-nav__item {
       display: none;
@@ -132,7 +132,6 @@
       min-width: 768px;
       width: 100%;
       background-color: $backgroundColor;
-      display: flex;
     }
   
     .menu__burger {
