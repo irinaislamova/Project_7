@@ -1,15 +1,4 @@
 @import "normalize.scss";
-@import "main-menu.scss";
-@import "main.scss";
-@import "left-menu.scss";
-@import "brands.scss";
-@import "tech-repair.scss";
-@import "price.scss";
-@import "price-policy.scss";
-@import "page-footer.scss";
-@import "callback-modal.scss";
-@import "feedback-modal.scss";
-@import "swiper.min.scss";
 @import 'variables.scss';
 
 @font-face {
@@ -49,10 +38,6 @@ body {
   margin: 0;
   font-family: "TT Lakes", "Times New Roman", sans;
   font-weight: normal;
-
-  /*position: relative; 
-  max-width: 1440px;  
-  width: 100%;  */
 }
 
 .container {
@@ -77,7 +62,6 @@ body {
 
 .list-reset {
   padding-left: 0;
-
   /*стандартные стили для списка*/
   list-style: none;
   margin-top: 0;
@@ -98,19 +82,6 @@ body {
     transform: scale(1.2);
     cursor: pointer;
   }
-}
-
-
-.primary-btn {
-  /*стандартный стиль для кнопки*/
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: $btnColor;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
 }
 .swiper-container {
   width: 600px;

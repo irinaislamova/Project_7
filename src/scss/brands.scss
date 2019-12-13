@@ -34,7 +34,7 @@
     padding-left: 16px;
     padding-right: 16px;    
     flex-shrink: 0;
-    background-color: $backgroundColor;
+    background-color: red;
     border: 1px solid $separatorColor;
     border-radius: 6px;
     margin-bottom: 16px;
@@ -49,8 +49,7 @@
       height: 80px;
       margin-bottom: 16px;      
       padding: 16px;
-      padding-left: 0;
-      box-sizing: border-box;
+      padding-left: 0;      
     }
   
     .brands__title {
@@ -108,8 +107,7 @@
       padding-left: 32px;
     }
   
-    .brands__container {
-      flex-wrap: wrap;
+    .brands__container {     
       width: 1120px;
       height: 176px;
       margin-bottom: 8px;

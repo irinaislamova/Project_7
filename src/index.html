@@ -11,72 +11,39 @@
   <link href="scss/swiper.min.scss">
    <!-- Demo styles -->
    <style>
-    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
+    
   </style> 
 </head>
   <body>    
     <div class="container">
-  	<section class="left-menu">
-      <div class="left-container-up">
-      <header>
-        <button class="primary-btn left-btn--close" type="button"></button>
-        <a href="#" class="left-menu-icon"><img src="img/logo.svg" alt="Логотип"></a> 
-        <button class="primary-btn left-btn--search" type="button"></button>
+  	<section class="dropdown-menu">
+      <div class="dropdown-container-header">
+      <header class="dropdown-menu__header">
+        <button class="primary-btn primary-btn--type_close dropdown-menu__close" type="button"></button>
+        <a href="#" class="dropdown-menu__logo"><img src="img/logo.svg" alt="Логотип"></a> 
+        <button class="primary-btn primary-btn--type_search" type="button"></button>
       </header>      
-        <nav><ul class="left-nav list-reset">
-          <li class="left-nav__item active"><a class="left-nav__link" href="#">Ремонт техники</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Услуги и сервисы</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Корпоративным клиентам</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Продавцам техники</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Партнерам</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Производителям</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Наши сервисные центры</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Контакты</a></li>       
+        <nav><ul class="dropdown-nav list-reset">
+          <li class="dropdown-nav__item dropdown-nav__item--active"><a class="dropdown-nav__link" href="#">Ремонт техники</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Услуги и сервисы</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Корпоративным клиентам</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Продавцам техники</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Партнерам</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Производителям</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Наши сервисные центры</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Контакты</a></li>       
         </ul></nav>
       </div>
-        <div class="left-container-down">      
-          <section class="left-contacts">
+        <div class="dropdown-container-footer">      
+          <section class="dropdown-contacts">
           <div class="social-btns">
             <button class="primary-btn btn-call" href="tel:79999999999" title="Позвонить"></button>     
-            <button class="primary-btn btn-mail" href="mailto:aos.egor@gmail.com" title="Написать"></button>
+            <button class="primary-btn btn-mail" href="mailto:primer@gmail.com" title="Написать"></button>
             <button class="primary-btn btn-profile" title="Профиль"></button>
 
           </div>
-          <a class="left-contacts-email" href="mailto:mail@cps.com">mail@cps.com</a>
-          <a class="left-contacts-number" href="tel:88008908900">8 800 890 8900</a>
+          <a class="dropdown-contacts-email" href="mailto:mail@cps.com">mail@cps.com</a>
+          <a class="dropdown-contacts-number" href="tel:88008908900">8 800 890 8900</a>
         </section>
         <ul class="languages-list list-reset">
           <li class="languages-list__item">
@@ -341,7 +308,7 @@
   </div>
   <div class="overlay"></div>  
   <!-- Swiper JS -->
-  <script type="text/javascript" src="js/swiper.min.js"></script>  
+   
     
   </body>
 </html>

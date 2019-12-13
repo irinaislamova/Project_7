@@ -4,20 +4,21 @@
     position: fixed;
     display: block;
     transform: translateX(120%);
+    transition-duration: 4s;
     top: 0;
     right: 0;
     z-index: 200;  
     /*transform:  translateX(100%);*/
     background-color: $backgroundColor;
     padding-top: 40px;
-    width: 440px;
+    max-width: 440px;
+    width: 100%;
     height: auto;
     box-sizing: border-box;
   }
   .callback-modal.transform{
     transform: none;
-}
-  
+  }  
   .callback-modal__title {
     font-size: 24px;
     line-height: 32px;
@@ -38,8 +39,7 @@
       top: 0;
       left: -18px;
     }
-  }
-  
+  }  
   .callback-modal__form {
     box-sizing: border-box;
     margin-left: 32px;
@@ -130,13 +130,11 @@
     font-size: 14px;
     line-height: 16px;
     color: $titleColor;
-  }
-  
+  }  
   a {
     text-decoration: none;
     color: $btnColor;
-  }
-  
+  }  
   .order-btn {
     border-radius: 20px;
     background-color: $btnColor;
@@ -147,13 +145,11 @@
     margin-right: auto;
     font-size: 12px;
     line-height: 24px;
-    text-transform: uppercase;
-  
+    text-transform: uppercase;  
     img {
       padding-left: 10px;
     }
-  }
-  
+  }  
   .callback-modal__close {
     position: absolute;
     top: 16px;
@@ -171,6 +167,7 @@
   }
   
   .primary-btn {
+    /*стандартный стиль для кнопки*/
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -179,4 +176,8 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
