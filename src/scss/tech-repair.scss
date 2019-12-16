@@ -38,7 +38,7 @@
       flex-wrap: nowrap;     
       max-width: 320px;
       overflow-x: scroll;
-      box-sizing: border-box;
+      box-sizing: border-box;      
     }
   
     .tech-repair__title {
@@ -54,6 +54,7 @@
       margin-bottom: 16px;
       width: 240px;
       height: 160px;
+      list-style: none;
   
       &:last-of-type {
         margin-right: 16px;

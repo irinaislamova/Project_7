@@ -10,8 +10,9 @@
     z-index: 200;
     background-color: $backgroundColor;
     padding-top: 40px;
-    width: 440px;
-    height: 100vh;
+    max-width: 440px;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
   }
   .feedback-modal.transform{
@@ -39,10 +40,10 @@
     }
   }
   
-  @media screen and (min-width: 310px) {
+  @media screen and (max-width: 310px) {
     .feedback-modal {
-      width: 320px;
-      height: 676px;
+      max-width: 320px;
+      width: 100%;      
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
     }
   
@@ -59,8 +60,9 @@
   
   @media screen and (min-width: 768px) {
     .feedback-modal {
-      width: 440px;
-      height: auto;
+      max-width: 440px;
+      width: 100%; 
+      
     }
   
     .feedback-modal__form {
@@ -168,6 +170,7 @@
   }
   
   @media screen and (min-width: 768px) {
+    
     .feedback-modal__close {
       position: absolute;
       top: 32px;

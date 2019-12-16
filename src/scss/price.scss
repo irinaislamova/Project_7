@@ -87,6 +87,7 @@
   @media screen and (min-width: 321px) {
     .prices {
       width: 100%;
+      box-sizing: border-box;      
     }
   
     .prices__t-cell--title {
@@ -117,8 +118,9 @@
     .prices__table {
       display: table;
       margin-left: 24px;
+      margin-right: 24px;
       border-collapse: collapse;
-      width: 100%;
+      width: calc(100% - 50px);
       box-sizing: border-box;
     }
   

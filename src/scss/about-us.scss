@@ -2,6 +2,7 @@
 
 .about-us {
   width: 100%;
+  box-sizing: border-box;
   padding: 0px 32px 42px 32px;
 }
 
@@ -9,6 +10,23 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+}
+.about-us-nav__link{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  text-decoration: none;
+  padding: 6px 20px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  display: block;
+}
+.about-us-nav__link--active{
+  background-color: $backgroundColor; 
+  border: 2px solid #b8ffec;
+  box-sizing: border-box;
+  border-radius: 6px;  
 }
 
 .about-us-content {
@@ -38,7 +56,7 @@
   background-color: transparent;
   border: none;
 
-  &::before {
+    &::before {
     content: "";
     display: block;
     background-image: url("../img/a.svg");
@@ -72,7 +90,7 @@
     width: 8px;
     height: 11px;
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 10px;
   }
 
@@ -84,6 +102,73 @@
     }
   }
 }
+/*.about-us__button--open{
+  position: relative;
+  border: none;
+  background-color: transparent;
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/a.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: royalblue;
+    width: 8px;
+    height: 11px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+  }  
+    &::after{
+      position: absolute;
+      display: block;
+      width: 130px;
+      height: 20px;
+      top: 0px;
+      left: 15px;      
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      content: "Читать далее";
+    }
+  }
+  .about-us__button--hide{    
+    position: relative;
+    border: none;
+    background-color: transparent;
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/link-hide.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: royalblue;
+      width: 8px;
+      height: 11px;
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+    }  
+      &::after{
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 20px;
+        top: 0px;
+        left: 15px;      
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        content: "Скрыть";
+      }
+    }
+*/
 
 @media screen and (max-width: 320px) {
   .about-us {
@@ -95,7 +180,7 @@
   .about-us-nav {
     margin-left: 16px;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
   }
 
   .about-us-nav__link {
@@ -133,6 +218,8 @@
 
 @media screen and (min-width: 768px) {
   .about-us {
+    width: 100%;
+    box-sizing: border-box;
     padding-left: 24px;
     padding-right: 24px;
   }

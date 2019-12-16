@@ -87,6 +87,7 @@ body {
   width: 600px;
   height: 300px;
 }
+
 .page-title{
   text-transform: uppercase;
   font-size: 16px;
@@ -95,3 +96,49 @@ body {
   display: block;
   background: linear-gradient(90deg, $mainBg 0%, $backgroundColor 98.61%);
 }
+/*Pagination*/
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+
+  background-color: #ddd;
+  border-radius: 50%;
+
+  &:last-child {
+      margin-right: 0;
+  }
+
+  &-active {
+      background-color: #B5B6BC;
+  }
+}
+.brands-pagination{
+  display: block; 
+  width: 130px; 
+  height: 18px;  
+  box-sizing: border-box; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+.tech-repair-pagination{
+  width: 150px; 
+  box-sizing: border-box;
+  margin-left: auto; 
+  margin-right: auto;
+}
+.prices-pagination{
+  width: 85px;
+  box-sizing: border-box; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 16px;
+}
+

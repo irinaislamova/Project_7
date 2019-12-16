@@ -63,6 +63,10 @@
   }
   
   @media screen and (min-width: 321px) {
+    .brands{
+      width: 100%;
+      box-sizing: border-box;
+    }
     .brands__title {
       padding-left: 24px;
       white-space: normal;

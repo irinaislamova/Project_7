@@ -6,42 +6,10 @@
   <meta name="keywords" content="ремонт, сервис, ПК, планшет, телефон">
   <meta name="description" content="Услуги по ремонту ПК, планшетов и телефонов">
   <title>CPS - Услуги и сервисы</title>  
-   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <style>      
   
-  <!-- Demo styles -->
-  <style>    
-    .swiper-container {
-      width: 320px;
-      overflow-x: auto;
-      height: 100px;
-      background-color: greenyellow;
-      margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1; 
-    }
-    
-   .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: red;
-      width: 240px;
-      height: 80px;
-      box-sizing: border-box;
-      /* Center slide text vertically */      
-      display: flex;      
-      justify-content: center;      
-      align-items: center;
-    }
-    .swiper-pagination{
-    	width: 320px;
-    }
-    .swiper-pagination-bullet{
-    	margin-right: 5px;
-    }
   </style>
 </head>
   <body>    
@@ -54,7 +22,7 @@
         <button class="primary-btn primary-btn--type_search" type="button"></button>
       </header>      
         <nav><ul class="dropdown-nav list-reset">
-          <li class="dropdown-nav__item dropdown-nav__item--active"><a class="dropdown-nav__link" href="#">Ремонт техники</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link dropdown-nav__link--active" href="#">Ремонт техники</a></li>
           <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Услуги и сервисы</a></li>
           <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Корпоративным клиентам</a></li>
           <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Продавцам техники</a></li>
@@ -89,21 +57,19 @@
       
     </div>
     </section>
-    <div class="main-container">  
+    <main class="main-container">  
           
       <div class="menu">
-        <div class="menu__burger primary-btn"></div>
-        <div class="menu__border768"></div>
+        <div class="menu__burger primary-btn"></div>        
         <a href="#" class="menu__icon"><img src="img/logo.svg" alt="Логотип"></a>
-        <button class="btn-call menu__phone" href="tel:79999999999" title="Позвонить"></button>
-        <button class="btn-mail menu__chat" href="aos@gmail.com" title="Написать"></button>
-        <div class="menu__profile "></div>
-        <div class="menu__border"></div>
+        <button class="menu__phone" href="tel:79999999999" title="Позвонить"></button>
+        <button class="menu__chat" href="test@gmail.com" title="Написать"></button>
+        <div class="menu__profile"></div>        
         <div class="menu__tools primary-btn"></div>
         <div class="menu__status primary-btn"></div>
       </div>
-      <div class="main-wrapper">
-        <h1 class="main-title">Услуги и сервисы</h1>
+      <div class="main-menu">
+        <h1 class="main-menu-title">Услуги и сервисы</h1>
         <ul class="main-menu-nav list-reset">
           <li class="main-menu-nav__item"><a class="main-menu-nav__link" href="#">Статус ремонта</a></li>
           <li class="main-menu-nav__item"><a class="main-menu-nav__link" href="#">Оставить заявку</a></li>
@@ -113,7 +79,7 @@
     
       <main class="about-us">
       <ul class="about-us-nav list-reset">
-        <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Ремонтируемые бренды</a></li>
+        <li class="about-us-nav__item"><a class="about-us-nav__link about-us-nav__link--active" href="#">Ремонтируемые бренды</a></li>
         <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Ремонтируемые устройства</a></li>
         <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Цены на услуги</a></li>
         <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Адреса сервисных центров</a></li>
@@ -130,6 +96,8 @@
           </div>
           <button class="link-more about-us-content__button--open" href="#">Читать далее</button>
           <button class="link-hide about-us-content__button--hide" href="#">Скрыть</button>
+          <!--<button class="about-us__button--open" href="#"></button>-->
+          
         </div>
         <img src="img/wall.jpg" alt="Главное изображение" class="about-us-content__img">
       </div>
@@ -172,7 +140,7 @@
       </li>   
     </div>  
 <!-- Add Pagination -->    
-        <div class="pagination brands-pagination" style="display: block; width: 130px; height: 18px;  box-sizing: border-box; margin-left: auto; margin-right: auto;"></div>
+        <div class="pagination brands-pagination"></div>
         <button class="link-more brands__link--open" href="#">Показать все</button>     
     <button class="link-hide brands__link--hide" href="#" style="display: none;">Скрыть</button> 
              
@@ -180,22 +148,20 @@
     
       <section class="tech-repair" id="repair-devices">
         <h2 class="tech-repair__title page-title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
-        <div class="tech-container"> 
-            <div class="swiper-container">	
-            <div class="swiper-wrapper">          
+        <div class="tech-container">                     
           <div class="tech-container__item">
-                  <h3 class="tech-container__title swiper-slide">Ремонт ноутбуков</h3>
+                  <h3 class="tech-container__title">Ремонт ноутбуков</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>       
-                <div class="tech-container__item swiper-slide">
+        </div>       
+                <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт планшетов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>
-                <div class="tech-container__item swiper-slide">
+                <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ПК </h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>                           
-                <div class="tech-container__item swiper-slide">
+                <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>            
@@ -203,27 +169,25 @@
                   <h3 class="tech-container__title">Ремонт ноутбуков</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>             
-                <div class="tech-container__item swiper-slide">
+                <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт планшетов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>              
-                <div class="tech-container__item swiper-slide">
+                <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ПК</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>           
-                <div class="tech-container__item swiper-slide">
+                <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>              
-                <div class="tech-container__item swiper-slide">
+                <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>           
-            </div></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination tech-repair-pagination"></div>               
-            </div>            
-            <button class="link-more tech-repair__arrows-link" href="#">Показать все (9)</button>
+                </div>         
+           </div>    
+           <div class="pagination tech-repair-pagination"></div>          
+          <button class="link-more tech-repair__arrows-link" href="#">Показать все (9)</button>
         <button class="link-hide tech-repair__arrows-link--hide">Скрыть</button>
       </section>
       <section class="prices">
@@ -294,8 +258,7 @@
             </div>
           </div>
         </div>
-        <div class="pagination prices-pagination"  style="width: 68px; height: 18px; box-sizing: border-box; margin-left: auto; margin-right: auto; display: flex; 
-        justify-content: space-between; align-items: center; margin-top: 16px;"></div>
+        <div class="pagination prices-pagination"></div>
       </section>
       
     <section class="price-policy">
@@ -313,7 +276,7 @@
       <a class="privacy-policy" href="#">Политика конфиденциальности</a>
       <p class="public-rules page-footer__public-rules">Информация, размещенная на данной странице, не является публичной офертой</p>
     </footer> 
-    </div> 
+  </main> 
 
     <section class="callback-modal">
       <h2 class="callback-modal__title">Заказать звонок</h2>
@@ -343,15 +306,37 @@
   <div class="overlay"></div>  
   
   <!-- Initialize Swiper -->
-  <script>
-  	if (window.innerWidth < 426) {
+  <script>    
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  
+  	/*if (window.innerWidth < 426) {
     var swiper = new Swiper('.swiper-container', {    
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
     });
-};   
+};   */
   </script> 
   </body>
 </html>

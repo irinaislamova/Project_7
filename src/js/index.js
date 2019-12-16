@@ -10,9 +10,9 @@ import '../scss/page-footer.scss';
 import '../scss/price-policy.scss';
 import '../scss/price.scss';
 import '../scss/tech-repair.scss';
-
 import '../scss/style.scss';
 import '../scss/swiper.min.scss';
+
 import '../js/swiper.min.js';
 
 /*Ремонт техники*/
@@ -50,76 +50,87 @@ brand_hide.addEventListener('click', function () {
 });
 
 
-/*Модальные окна*/
+/*Обратный звонок*/
 let btn_call = document.querySelector('.btn-call');
-let menu_phone = document.querySelector('.main-menu__phone');
+let menu_phone = document.querySelector('.menu__phone');
 let callback = document.querySelector('.callback-modal');
 let callback_close = document.querySelector('.callback-modal__close');
 let overlay_callback= document.querySelector('.overlay');
+let body_c= document.querySelector('body');
 let dropdown_menu_callback = document.querySelector('.dropdown-menu');
-btn_call.addEventListener('click', function(){
+btn_call.addEventListener('click', function(){	
 	callback.classList.add('transform');
 	overlay_callback.style.display = 'block';
 	dropdown_menu_callback.style.display = 'none';
-
+	body_c.style.position = 'fixed';
 });
 menu_phone.addEventListener('click', function(){	
 	callback.classList.add('transform');
 	overlay_callback.style.display = 'block';	
+	body_c.style.position = 'fixed';	
 });
 callback_close.addEventListener('click', function(){
     callback.classList.remove('transform');
 	overlay_callback.style.display = 'none';
+	body_c.style.position = 'static';
 });
 document.addEventListener('keydown', function(e) {
 	if (e.keyCode === 27) {		
 		callback.classList.remove('transform');
 		overlay_callback.style.display = 'none';;
+		body_c.style.position = 'static';
 	}
 });
 overlay_callback.addEventListener('click', function(){
 	callback.classList.remove('transform');
 	overlay_callback.style.display = 'none';
+	body_c.style.position = 'static';
 });
 
 
 /*Обратная связь*/
 
 let btn_mail = document.querySelector('.btn-mail');
-let menu_chat = document.querySelector('.main-menu__chat');
+let menu_chat = document.querySelector('.menu__chat');
 let feedback = document.querySelector('.feedback-modal');
 let feedback_close = document.querySelector('.feedback-modal__close');
 let overlay_feedback= document.querySelector('.overlay');
+let body_f= document.querySelector('body');
 let dropdown_menu_feedback = document.querySelector('.dropdown-menu');
 btn_mail.addEventListener('click', function(){	
 	feedback.classList.add('transform');
 	overlay_feedback.style.display = 'block';
 	dropdown_menu_feedback.style.display = 'none';
+	body_f.style.position = 'fixed';
 });
 menu_chat.addEventListener('click', function(){	
 	feedback.classList.add('transform');
 	overlay_feedback.style.display = 'block';
+	body_f.style.position = 'fixed';
 });
 feedback_close.addEventListener('click', function(){	
 	feedback.classList.remove('transform');
 	overlay_feedback.style.display = 'none';
+	body_f.style.position = 'static';
 });
 document.addEventListener('keydown', function(e) {
 	if (e.keyCode === 27) {		
 	feedback.classList.remove('transform');
 	overlay_feedback.style.display = 'none';
+	body_f.style.position = 'static';
 	}
 });
 overlay_feedback.addEventListener('click', function(){
 	feedback.classList.remove('transform');
 	overlay_feedback.style.display = 'none';
+	body_f.style.position = 'static';
 });
 
 
 /*Читать далее*/
-let button_open = document.querySelector('.main-content__button--open');
-let button_close = document.querySelector('.main-content__button--hide');
-let main_text = document.querySelector('.main-text');
+let button_open = document.querySelector('.about-us-content__button--open');
+let button_close = document.querySelector('.about-us-content__button--hide');
+let main_text = document.querySelector('.about-us-wrapper__text');
 button_open.addEventListener('click', function(){	
 	main_text.overflow = 'block';
 	button_open.style.display = 'none';
@@ -134,25 +145,37 @@ button_close.addEventListener('click', function(){
 	main_text.style.height = '153px';
 	main_text.style.overflow = 'hidden';
 });
+
 /*Левое меню*/
-let burger_menu = document.querySelector('.main-menu__burger');
+let menu_burger = document.querySelector('.menu__burger');
 let dropdown_menu = document.querySelector('.dropdown-menu');
 let dropdown_close = document.querySelector('.dropdown-menu__close');
-let main = document.querySelector('.main-menu');
+let body_d = document.querySelector('body');
 let overlay= document.querySelector('.overlay');
-burger_menu.addEventListener('click', function(){	
-	overlay.style.dislay = 'block';
-	dropdown_menu.style.display = 'block';	
+menu_burger.addEventListener('click', function(){	
+	console.log('3');
+	dropdown_menu.classList.add('transform');
+	overlay.style.display = 'block';
+	body_d.style.position = 'fixed';	
 });
-dropdown_close.addEventListener('click', function(){	
-	dropdown_menu.style.display = 'none';
+dropdown_close.addEventListener('click', function(){		
+	dropdown_menu.classList.remove('transform');
 	overlay.style.display = 'none';
+	body_d.style.position = 'static';
 });
-overlay.addEventListener('click', function(){
+overlay.addEventListener('click', function(){	
+	dropdown_menu.classList.remove('transform');
 	overlay.style.display = 'none';
-	dropdown_menu.style.display = 'none';
+	body_d.style.position = 'static';
 });
-/*swiper
+document.addEventListener('keydown', function(e) {
+	if (e.keyCode === 27) {		
+		dropdown_menu.classList.remove('transform');
+		overlay.style.display = 'none';
+		body_d.style.position = 'static';	
+	}
+});
+
 if (window.innerWidth < 426) {	
 	console.log('5');
 	var techSlider = new Swiper('.tech-repair', {
@@ -185,11 +208,17 @@ if (window.innerWidth < 426) {
 		}
 	});
 }
-if (window.innerWidth < 426) {
-    var swiper = new Swiper('.swiper-container', {    
+console.log('123');
+/*if (window.innerWidth < 426) {
+    var swiper = new Swiper('.swiper-container', {  
+		direction: 'gorizontal',
+		loop: false,   
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
     });
-}; */
+}; 
+*/
+
+
