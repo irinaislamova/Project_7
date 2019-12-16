@@ -5,78 +5,43 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="ремонт, сервис, ПК, планшет, телефон">
   <meta name="description" content="Услуги по ремонту ПК, планшетов и телефонов">
-  <title>CPS - Услуги и сервисы</title>
+  <title>CPS - Услуги и сервисы</title>  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <style>      
   
-   
-  <link href="scss/swiper.min.scss">
-   
-   <style>
-    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style> 
+  </style>
 <link href="style.css" rel="stylesheet"></head>
   <body>    
     <div class="container">
-  	<section class="left-menu">
-      <div class="left-container-up">
-      <header>
-        <button class="primary-btn left-btn--close" type="button"></button>
-        <a href="#" class="left-menu-icon"><img src="img/logo.svg" alt="Логотип"></a> 
-        <button class="primary-btn left-btn--search" type="button"></button>
+  	<section class="dropdown-menu">
+      <div class="dropdown-container-header">
+      <header class="dropdown-menu__header">
+        <button class="primary-btn primary-btn--type_close dropdown-menu__close" type="button"></button>
+        <a href="#" class="dropdown-menu__logo"><img src="img/logo.svg" alt="Логотип"></a> 
+        <button class="primary-btn primary-btn--type_search" type="button"></button>
       </header>      
-        <nav><ul class="left-nav list-reset">
-          <li class="left-nav__item active"><a class="left-nav__link" href="#">Ремонт техники</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Услуги и сервисы</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Корпоративным клиентам</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Продавцам техники</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Партнерам</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Производителям</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Наши сервисные центры</a></li>
-          <li class="left-nav__item"><a class="left-nav__link" href="#">Контакты</a></li>       
+        <nav><ul class="dropdown-nav list-reset">
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link dropdown-nav__link--active" href="#">Ремонт техники</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Услуги и сервисы</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Корпоративным клиентам</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Продавцам техники</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Партнерам</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Производителям</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Наши сервисные центры</a></li>
+          <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Контакты</a></li>       
         </ul></nav>
       </div>
-        <div class="left-container-down">      
-          <section class="left-contacts">
+        <div class="dropdown-container-footer">      
+          <section class="dropdown-contacts">
           <div class="social-btns">
             <button class="primary-btn btn-call" href="tel:79999999999" title="Позвонить"></button>     
-            <button class="primary-btn btn-mail" href="mailto:aos.egor@gmail.com" title="Написать"></button>
+            <button class="primary-btn btn-mail" href="mailto:primer@gmail.com" title="Написать"></button>
             <button class="primary-btn btn-profile" title="Профиль"></button>
 
           </div>
-          <a class="left-contacts-email" href="mailto:mail@cps.com">mail@cps.com</a>
-          <a class="left-contacts-number" href="tel:88008908900">8 800 890 8900</a>
+          <a class="dropdown-contacts-email" href="mailto:mail@cps.com">mail@cps.com</a>
+          <a class="dropdown-contacts-number" href="tel:88008908900">8 800 890 8900</a>
         </section>
         <ul class="languages-list list-reset">
           <li class="languages-list__item">
@@ -92,53 +57,54 @@
       
     </div>
     </section>
-    <div class="main-container">
-    
+    <main class="main-container">  
           
-      <div class="main-menu">
-        <div class="main-menu__burger primary-btn"></div>
-        <div class="main-menu__border768"></div>
-        <a href="#" class="main-menu__icon"><img src="img/logo.svg" alt="Логотип"></a>
-        <button class="btn-call main-menu__phone" href="tel:79999999999" title="Позвонить"></button>
-        <button class="btn-mail main-menu__chat" href="aos@gmail.com" title="Написать"></button>
-        <div class="main-menu__profile"></div>
-        <div class="main-menu__border"></div>
-        <div class="main-menu__tools primary-btn"></div>
-        <div class="main-menu__status primary-btn"></div>
+      <div class="menu">
+        <div class="menu__burger primary-btn"></div>        
+        <a href="#" class="menu__icon"><img src="img/logo.svg" alt="Логотип"></a>
+        <button class="menu__phone" href="tel:79999999999" title="Позвонить"></button>
+        <button class="menu__chat" href="test@gmail.com" title="Написать"></button>
+        <div class="menu__profile"></div>        
+        <div class="menu__tools primary-btn"></div>
+        <div class="menu__status primary-btn"></div>
       </div>
-      <div class="main-wrapper">
-        <h1 class="main-title">Услуги и сервисы</h1>
-        <ul class="main-menu__1120 list-reset">
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Статус ремонта</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Оставить заявку</a></li>
+      <div class="main-menu">
+        <h1 class="main-menu-title">Услуги и сервисы</h1>
+        <ul class="main-menu-nav list-reset">
+          <li class="main-menu-nav__item"><a class="main-menu-nav__link" href="#">Статус ремонта</a></li>
+          <li class="main-menu-nav__item"><a class="main-menu-nav__link" href="#">Оставить заявку</a></li>
         </ul>
       </div> 
        
     
-      <main class="main">
-      <ul class="main-nav list-reset">
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Ремонтируемые бренды</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Ремонтируемые устройства</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Цены на услуги</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Адреса сервисных центров</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Специальные цены</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+      <main class="about-us">
+      <ul class="about-us-nav list-reset">
+        <li class="about-us-nav__item"><a class="about-us-nav__link about-us-nav__link--active" href="#">Ремонтируемые бренды</a></li>
+        <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Ремонтируемые устройства</a></li>
+        <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Цены на услуги</a></li>
+        <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Адреса сервисных центров</a></li>
+        <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Специальные цены</a></li>
+        <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Отзывы</a></li>
       </ul>
-      <div class="main-content">
-        <div class="main-text-wrapper">
-          <div class="main-text">
+      <div class="about-us-content">
+        <div class="about-us-wrapper">
+          <div class="about-us-wrapper__text">
             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>       
+            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error fugit ex eveniet, expedita placeat ad quibusdam quisquam consequuntur accusamus amet molestias commodi excepturi nisi, facilis vel repudiandae provident libero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error fugit ex eveniet, expedita placeat ad quibusdam quisquam consequuntur accusamus amet molestias commodi excepturi nisi, facilis vel repudiandae provident libero?</p>      
           </div>
-          <button class="link-more main-content__button--open" href="#">Читать далее</button>
-          <button class="link-hide main-content__button--hide" href="#">Скрыть</button>
+          <button class="link-more about-us-content__button--open" href="#">Читать далее</button>
+          <button class="link-hide about-us-content__button--hide" href="#">Скрыть</button>
+          
+          
         </div>
-        <img src="img/wall.jpg" alt="Главное изображение" class="main-content__img">
+        <img src="img/wall.jpg" alt="Главное изображение" class="about-us-content__img">
       </div>
     </main>
     
     <section class="brands">
-      <h1 class="brands__title">Ремонт техники различных брендов</h1>
+      <h2 class="brands__title page-title">Ремонт техники различных брендов</h2>
       <div class="brands__container">         
        <li class="brands__item">
         <img class="brands__image" src="img/Lenovo.svg" alt="Lenovo">  
@@ -174,23 +140,23 @@
       </li>   
     </div>  
     
-        <div class="pagination brands-pagination" style="display: block; width: 130px; height: 18px;  box-sizing: border-box; margin-left: auto; margin-right: auto;"></div>
+        <div class="pagination brands-pagination"></div>
         <button class="link-more brands__link--open" href="#">Показать все</button>     
     <button class="link-hide brands__link--hide" href="#" style="display: none;">Скрыть</button> 
              
       </section>
     
       <section class="tech-repair" id="repair-devices">
-        <h2 class="tech-repair__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
-        <div class="tech-container">          
-                <div class="tech-container__item">
+        <h2 class="tech-repair__title page-title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+        <div class="tech-container">                     
+          <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ноутбуков</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>              
+        </div>       
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт планшетов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>              
+                </div>
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ПК </h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
@@ -198,11 +164,11 @@
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>              
+                </div>            
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ноутбуков</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>              
+                </div>             
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт планшетов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
@@ -210,7 +176,7 @@
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт ПК</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>              
+                </div>           
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
@@ -218,15 +184,14 @@
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>              
-            </div>
-            
-            <div class="pagination tech-repair-pagination" style="display: block; width: 150px; box-sizing: border-box; margin-left: auto; margin-right: auto;"></div>                
-        <button class="link-more tech-repair__arrows-link" href="#">Показать все (9)</button>
+                </div>         
+           </div>    
+           <div class="pagination tech-repair-pagination"></div>          
+          <button class="link-more tech-repair__arrows-link" href="#">Показать все (9)</button>
         <button class="link-hide tech-repair__arrows-link--hide">Скрыть</button>
       </section>
       <section class="prices">
-        <h1 class="prices__title">ЦЕНЫ НА УСЛУГИ</h1>
+        <h2 class="prices__title page-title">ЦЕНЫ НА УСЛУГИ</h2>
         <div class="prices__table">
           <div class="table-head">
             <div class="prices__t-row">
@@ -293,8 +258,7 @@
             </div>
           </div>
         </div>
-        <div class="pagination prices-pagination" style="width: 68px; height: 18px; box-sizing: border-box; margin-left: auto; margin-right: auto; display: flex; 
-        justify-content: space-between; align-items: center; margin-top: 16px;"></div>
+        <div class="pagination prices-pagination"></div>
       </section>
       
     <section class="price-policy">
@@ -312,10 +276,10 @@
       <a class="privacy-policy" href="#">Политика конфиденциальности</a>
       <p class="public-rules page-footer__public-rules">Информация, размещенная на данной странице, не является публичной офертой</p>
     </footer> 
-    </div> 
+  </main> 
 
     <section class="callback-modal">
-      <h1 class="callback-modal__title">Заказать звонок</h1>
+      <h2 class="callback-modal__title">Заказать звонок</h2>
       <form class="callback-modal__form" action="http://echo.htmlacademy.ru">
         <input class="callback-modal__phone-number" type="tel" placeholder="Телефон">
         <p class="callback-modal__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
@@ -325,7 +289,7 @@
       <button class="primary-btn primary-btn--close callback-modal__close" type="button"></button>
     </section>
     <section class="feedback-modal">
-      <h1 class="feedback-modal__title">Обратная связь</h1>
+      <h2 class="feedback-modal__title">Обратная связь</h2>
       <form class="feedback-modal__form" name="feedback-name" action="http://echo.htmlacademy.ru">
         <input class="feedback-modal__name" type="text" placeholder="Имя">
         <input class="feedback-modal__phone-number" name="feedback-telephone" type="tel" placeholder="Телефон">
@@ -341,7 +305,38 @@
   </div>
   <div class="overlay"></div>  
   
-  <script type="text/javascript" src="js/swiper.min.js"></script>  
-    
+  
+  <script>    
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  
+  	/*if (window.innerWidth < 426) {
+    var swiper = new Swiper('.swiper-container', {    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+};   */
+  </script> 
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
