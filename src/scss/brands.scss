@@ -3,6 +3,7 @@
 .brands {
     background-color: #f8f8f8;
     margin-bottom: 16px;
+    overflow: hidden;
   }
   
   .brands__title {   
@@ -13,7 +14,7 @@
   .brands__container {
     display: flex;
     flex-wrap: wrap;    
-    overflow: hidden;
+    
     list-style: none;
     box-sizing: border-box;
   }

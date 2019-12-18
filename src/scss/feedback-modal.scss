@@ -16,7 +16,11 @@
   
   .feedback-modal.transform{
     transform: none;
-}
+  }
+  .feedback-modal__content{  
+  overflow-y: auto;
+  height: 100%;
+  }
   
   .feedback-modal__title {
     font-size: 24px;
@@ -111,9 +115,7 @@
     }
   
     input:focus {
-      outline: none;
-  
-      /*border-color: $highlightColor;*/
+      outline: none;  
     }
   }
   
@@ -145,6 +147,8 @@
   } 
   
   .feedback-modal__close {
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 16px;
     left: 24px;
@@ -161,10 +165,19 @@
       margin-bottom: 20px;
     }
   }
- @media screen and (max-height: 600px){
-    .feedback-modal{
-    height: 100%;
-    overflow-y: auto;
+  .primary-btn {
+    /*стандартный стиль для кнопки*/
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $btnColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
     }
   }
   

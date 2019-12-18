@@ -3,6 +3,7 @@
 @media screen and (max-width: 320px) {
     .prices {
       max-width: 320px;
+      overflow: hidden;
       box-sizing: border-box;
     }
   
@@ -19,8 +20,7 @@
   
     .prices__t-body {
       display: flex;
-      width: 320px;
-      overflow-x: auto;
+      width: 320px;      
     }
   
     .prices__t-row {

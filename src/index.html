@@ -178,9 +178,9 @@
                   <a class="arrow-btn tech-container__link" href="#"></a>
                 </div>
                 <div class="tech-container__item">
-                  <h3 class="tech-container__title">Ремонт ПК </h3>
-                  <a class="arrow-btn tech-container__link" href="#"></a>
-                </div>                           
+                    <h3 class="tech-container__title">Ремонт ПК</h3>
+                    <a class="arrow-btn tech-container__link" href="#"></a>
+                  </div>                           
                 <div class="tech-container__item">
                   <h3 class="tech-container__title">Ремонт мониторов</h3>
                   <a class="arrow-btn tech-container__link" href="#"></a>
@@ -299,49 +299,42 @@
   </main> 
 
     <section class="callback-modal">
-      <h2 class="callback-modal__title">Заказать звонок</h2>
-      <form class="callback-modal__form" action="http://echo.htmlacademy.ru">
-        <input class="callback-modal__phone-number" type="tel" placeholder="Телефон">
-        <p class="callback-modal__text">Нажимая “отправить”, вы даете согласие на <a class="callback__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
-        <button class="order-btn callback-modal__button" type="submit">Отправить<img src="img/price-arrow.svg" alt=""></button>
-
-      </form>
+      <div class="callback-modal__content">
+        <h2 class="callback-modal__title">Заказать звонок</h2>
+        <form class="callback-modal__form" action="http://echo.htmlacademy.ru">
+          <input class="callback-modal__phone-number" type="tel" placeholder="Телефон">
+          <p class="callback-modal__text">Нажимая “отправить”, вы даете согласие на <a class="callback__link"
+              href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="callback__link" href="#">политикой конфиденциальности</a>
+          </p>
+          <button class="order-btn callback-modal__button" type="submit">Отправить<img src="img/price-arrow.svg"
+              alt=""></button>
+    
+        </form>
+      </div>
       <button class="primary-btn primary-btn--close callback-modal__close" type="button"></button>
     </section>
     <section class="feedback-modal">
-      <h2 class="feedback-modal__title">Обратная связь</h2>
-      <form class="feedback-modal__form" name="feedback-name" action="http://echo.htmlacademy.ru">
-        <input class="feedback-modal__name" type="text" placeholder="Имя">
-        <input class="feedback-modal__phone-number" name="feedback-telephone" type="tel" placeholder="Телефон">
-        
-        <input class="feedback-modal__email" name="feedback-email" type="email" placeholder="Электронная почта">
-        <textarea class="feedback-modal__message" name="feedback-message" placeholder="Сообщение"></textarea>
-        <p class="feedback-modal__text">Нажимая “отправить”, вы даете согласие на <a class="feedback__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
-        
-        <button class="order-btn feedback-modal__button" type="submit">Отправить</button>
-      </form>
-      <button class="primary-btn primary-btn--close feedback-modal__close" type="button"></button>      
+      <div class="feedback-modal__content">
+        <h2 class="feedback-modal__title">Обратная связь</h2>
+        <form class="feedback-modal__form" name="feedback-name" action="http://echo.htmlacademy.ru">
+    
+          <input class="feedback-modal__name" type="text" placeholder="Имя">
+          <input class="feedback-modal__phone-number" name="feedback-telephone" type="tel" placeholder="Телефон">
+    
+          <input class="feedback-modal__email" name="feedback-email" type="email" placeholder="Электронная почта">
+          <textarea class="feedback-modal__message" name="feedback-message" placeholder="Сообщение"></textarea>
+          <p class="feedback-modal__text">Нажимая “отправить”, вы даете согласие на <a class="feedback__link"
+              href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="feedback__link" href="#">политикой
+              конфиденциальности</a>
+          </p>    
+          <button class="order-btn feedback-modal__button" type="submit">Отправить</button>
+        </form>  
+      </div>
+      <button class="primary-btn primary-btn--close feedback-modal__close" type="button"></button>
     </section>
   </div>
   <div class="overlay"></div>  
   
-  
-  <script>  /*  
-  var mySwiper = new Swiper ('.swiper-container', {
-    
-    direction: 'vertical',
-    loop: true,
-
-    
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-   
-  })
-  
-  	
-  */
-  </script> 
+ 
   </body>
 </html>

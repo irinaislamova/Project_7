@@ -10,7 +10,7 @@ import '../scss/page-footer.scss';
 import '../scss/price-policy.scss';
 import '../scss/price.scss';
 import '../scss/tech-repair.scss';
-import '../scss/swiper.scss';
+
 import '../scss/swiper.min.scss';
 
 import '../js/swiper.min.js';
@@ -129,37 +129,24 @@ overlay_feedback.addEventListener('click', function(){
 
 /*Читать далее*/
 
-/*function change(button){
-	let main_text_hide = document.querySelector('.about-us-wrapper__text--hide');
-    if (main_text_hide.style.display == "none"){
-		console.log('work');
-		main_text_hide.style.display = "block";
-        button.textContent = "Скрыть";
-        button.classList.add("about-us-content__button--hide");
-        button.classList.remove("about-us-content__button--open");
-    } else {
-		main_text_hide.style.display = "none";
-        button.textContent = "Далее";
-        button.classList.remove("about-us-content__button--hide");
-        button.classList.add("about-us-content__button--open");
-	}
-};*/
 let button_link = document.querySelector('.link-more');
-let button_open = document.querySelector('.about-us-content__button--open');
-let main_text_hide = document.querySelector('.about-us-wrapper__text--hide');
-button_open.addEventListener('click', function(){	
-	main_text_hide.style.display = 'block';	
-	button_link.classList.remove('about-us-content__button--open');
-	button_link.classList.add('about-us-content__button--hide');
 
-	let button_close = document.querySelector('.about-us-content__button--hide');
-	button_close.textContent = "Скрыть";	
-	button_close.addEventListener('click', function(){
+let main_text_hide = document.querySelector('.about-us-wrapper__text--hide');
+button_link.addEventListener('click', function(){	
+	if(main_text_hide.style.display == "none"){	
+	main_text_hide.style.display = 'block';		
+	} else {
 		main_text_hide.style.display = 'none';	
-		button_link.classList.remove('about-us-content__button--hide');
-		button_link.classList.add('about-us-content__button--open');	
-		button_link.textContent = "Читать далее";	
-	});
+	};
+	if(button_link.classList.contains('about-us-content__button--open')){
+		 button_link.classList.remove('about-us-content__button--open');
+		 button_link.classList.add('about-us-content__button--hide'); 
+		 button_link.textContent = "Скрыть";
+	} else {
+		button_link.classList.add('about-us-content__button--open');
+		 button_link.classList.remove('about-us-content__button--hide'); 
+		 button_link.textContent = "Читать далее";
+	};
 });
 
 /*Левое меню*/
