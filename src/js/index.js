@@ -1,4 +1,4 @@
-
+import '../scss/style.scss';
 import '../scss/brands.scss';
 import '../scss/callback-modal.scss';
 import '../scss/feedback-modal.scss';
@@ -10,7 +10,7 @@ import '../scss/page-footer.scss';
 import '../scss/price-policy.scss';
 import '../scss/price.scss';
 import '../scss/tech-repair.scss';
-import '../scss/style.scss';
+import '../scss/swiper.scss';
 import '../scss/swiper.min.scss';
 
 import '../js/swiper.min.js';
@@ -128,22 +128,38 @@ overlay_feedback.addEventListener('click', function(){
 
 
 /*Читать далее*/
+
+/*function change(button){
+	let main_text_hide = document.querySelector('.about-us-wrapper__text--hide');
+    if (main_text_hide.style.display == "none"){
+		console.log('work');
+		main_text_hide.style.display = "block";
+        button.textContent = "Скрыть";
+        button.classList.add("about-us-content__button--hide");
+        button.classList.remove("about-us-content__button--open");
+    } else {
+		main_text_hide.style.display = "none";
+        button.textContent = "Далее";
+        button.classList.remove("about-us-content__button--hide");
+        button.classList.add("about-us-content__button--open");
+	}
+};*/
+let button_link = document.querySelector('.link-more');
 let button_open = document.querySelector('.about-us-content__button--open');
-let button_close = document.querySelector('.about-us-content__button--hide');
-let main_text = document.querySelector('.about-us-wrapper__text');
+let main_text_hide = document.querySelector('.about-us-wrapper__text--hide');
 button_open.addEventListener('click', function(){	
-	main_text.overflow = 'block';
-	button_open.style.display = 'none';
-	button_close.style.display = 'block';
-	main_text.style.height = 'auto';
-	main_text.style.overflow = 'visible';
-});
-button_close.addEventListener('click', function(){
-	main_text.overflow = 'block';
-	button_open.style.display = 'block';
-	button_close.style.display = 'none';	
-	main_text.style.height = '153px';
-	main_text.style.overflow = 'hidden';
+	main_text_hide.style.display = 'block';	
+	button_link.classList.remove('about-us-content__button--open');
+	button_link.classList.add('about-us-content__button--hide');
+
+	let button_close = document.querySelector('.about-us-content__button--hide');
+	button_close.textContent = "Скрыть";	
+	button_close.addEventListener('click', function(){
+		main_text_hide.style.display = 'none';	
+		button_link.classList.remove('about-us-content__button--hide');
+		button_link.classList.add('about-us-content__button--open');	
+		button_link.textContent = "Читать далее";	
+	});
 });
 
 /*Левое меню*/
@@ -176,8 +192,7 @@ document.addEventListener('keydown', function(e) {
 	}
 });
 
-if (window.innerWidth < 426) {	
-	console.log('5');
+if (window.innerWidth < 426) {		
 	var techSlider = new Swiper('.tech-repair', {
 		slidesPerView: 'auto',
 		wrapperClass: 'tech-container',
@@ -208,17 +223,6 @@ if (window.innerWidth < 426) {
 		}
 	});
 }
-console.log('123');
-/*if (window.innerWidth < 426) {
-    var swiper = new Swiper('.swiper-container', {  
-		direction: 'gorizontal',
-		loop: false,   
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-}; 
-*/
+
 
 

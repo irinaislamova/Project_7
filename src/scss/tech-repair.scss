@@ -1,25 +1,17 @@
 @import 'variables.scss';
 
-.tech-repair__title {
-    /*text-transform: uppercase;
-    font-size: 16px;
-    line-height: 24px;
-    color: $titleColor;
-    display: block;
-    background: linear-gradient(90deg, $mainBg 0%, $backgroundColor 98.61%);
-    */
+.tech-container {
+  display: flex;
+  overflow: hidden;
+  height: 180px;
+}
+
+.tech-repair__title {   
     padding: 16px;
     margin-top: 0;
     padding-left: 32px;
     margin-bottom: 24px;
-  }
-  
-  
-  .tech-container {
-    display: flex;
-    overflow: hidden;
-    height: 180px;
-  }
+  }   
   
   .tech-container__item {
     margin-left: 32px;
@@ -30,19 +22,24 @@
     border: 1px solid $separatorColor;
     border-radius: 6px;
     box-sizing: border-box;
+    display: flex;
     flex-shrink: 0;
   }
-  
+  .tech-repair__arrows-link{
+    margin-left: 18px;
+  }
+  .tech-repair__arrows-link--hide{
+      margin-left: 18px;
+  }
   @media screen and (max-width: 320px) {
     .tech-container {
       flex-wrap: nowrap;     
-      max-width: 320px;
-      overflow-x: scroll;
+      max-width: 320px;      
       box-sizing: border-box;      
-    }
-  
+    }      
     .tech-repair__title {
       max-width: 320px;
+      width: 100%;
       white-space: normal;
       margin-left: 0;
       box-sizing: border-box;
@@ -51,9 +48,7 @@
   
     .tech-container__item {
       margin-left: 16px;
-      margin-bottom: 16px;
-      width: 240px;
-      height: 160px;
+      margin-bottom: 16px;      
       list-style: none;
   
       &:last-of-type {
@@ -96,12 +91,13 @@
   }
   
   @media screen and (min-width: 1120px) {
-    .tech-container {
+    .tech-container {      
       flex-wrap: wrap;      
       width: 1120px;
     }
   
     .tech-container__item {
+      display: flex;
       margin-left: 32px;
   
       &:nth-of-type(3n) {

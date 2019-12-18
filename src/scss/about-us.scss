@@ -13,9 +13,8 @@
 }
 .about-us-nav__link{
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #7E7E82;
+  line-height: 24px;  
+  color: #7e7e82;
   text-decoration: none;
   padding: 6px 20px;
   border: 2px solid transparent;
@@ -35,7 +34,9 @@
 }
 
 .about-us-wrapper__text {
-  flex-grow: 1;
+  flex-grow: 1;  
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .about-us-content__img {
@@ -44,18 +45,9 @@
   flex-shrink: 0;
   border-radius: 6px;
 }
-
-.link-more {
-  font-size: 16px;
-  line-height: 24px;
-  color: #1B1C21;
-  text-decoration: none;
-  padding-left: 32px;
-  position: relative;
-  margin-top: 10px;
-  background-color: transparent;
-  border: none;
-
+  .about-us-content__button--open{
+    position: relative;
+    
     &::before {
     content: "";
     display: block;
@@ -65,22 +57,14 @@
     width: 8px;
     height: 11px;
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 10px;
   }
 }
 
-.link-hide {
-  display: none;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1B1C21;
-  text-decoration: none;
-  padding-left: 32px;
+.about-us-content__button--hide{
   position: relative;
-  background: transparent;
-  border: none;
-
+  
   &::before {
     content: "";
     display: block;
@@ -90,85 +74,10 @@
     width: 8px;
     height: 11px;
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: 10px;
-  }
-
-  &:hover {
-    color: transparent;
-
-    &:before {
-      display: none;
-    }
-  }
+  } 
 }
-/*.about-us__button--open{
-  position: relative;
-  border: none;
-  background-color: transparent;
-  &::before {
-    content: "";
-    display: block;
-    background-image: url("../img/a.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: royalblue;
-    width: 8px;
-    height: 11px;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-  }  
-    &::after{
-      position: absolute;
-      display: block;
-      width: 130px;
-      height: 20px;
-      top: 0px;
-      left: 15px;      
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 500;
-      content: "Читать далее";
-    }
-  }
-  .about-us__button--hide{    
-    position: relative;
-    border: none;
-    background-color: transparent;
-    &::before {
-      content: "";
-      display: block;
-      background-image: url("../img/link-hide.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: royalblue;
-      width: 8px;
-      height: 11px;
-      position: absolute;
-      top: 5px;
-      left: 10px;
-      background-color: transparent;
-      border: none;
-      text-decoration: none;
-    }  
-      &::after{
-        position: absolute;
-        display: block;
-        width: 100px;
-        height: 20px;
-        top: 0px;
-        left: 15px;      
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 500;
-        content: "Скрыть";
-      }
-    }
-*/
 
 @media screen and (max-width: 320px) {
   .about-us {
@@ -195,31 +104,20 @@
     width: 320px;
     box-sizing: border-box;
     padding-left: 16px;
-    padding-right: 16px;
-    overflow: hidden;
-    height: 90px;
-    line-height: 18px;
-    font-size: 14px;
+    padding-right: 16px;           
   }
 
   .about-us-content__img {
     width: 320px;
     margin: 0;
   }
-
-  .about-us-menu__border768 {
-    display: none;
-  }
-
   .about-us-content__button--open {
     margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .about-us {
-    width: 100%;
-    box-sizing: border-box;
+  .about-us {    
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -229,15 +127,10 @@
   }
 
   .about-us-wrapper__text {
-    padding: 0;
-    overflow: hidden;
-    height: 153px;
-    line-height: 20px;
-    font-size: 14px;
+    padding: 0;   
   }
 
-  .about-us-content__img {
-    width: 50%;
+  .about-us-content__img {    
     margin-left: 48px;
   }
 }
@@ -251,12 +144,7 @@
   .about-us-title {
     margin-left: 30px;
   }
-
-  .about-us-wrapper__text {
-    overflow: hidden;
-    height: 153px;
-  }
-
+  
   .about-us-content__img {
     margin-left: 36px;
   }

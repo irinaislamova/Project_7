@@ -32,7 +32,7 @@
     background-image: url("../img/burger.svg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     margin: 24px 17px 24px 16px;
   }
@@ -40,49 +40,7 @@
   .menu__icon {
     margin-top: 18px;
   }
-  /*.menu__phone {
-    display: block;
-    border-radius: 50%;
-    background-color: $btnColor;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/phone.svg");
-    margin-right: 16px;
-    margin-top: 24px;
-    margin-left: auto;
-    border: none;
-  }
-
-  .menu__chat {
-    border: none;
-    display: block;
-    border-radius: 50%;
-    background-color: $btnColor;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/chat.svg");
-    margin-top: 24px;
-    margin-right: 16px;
-  }
-
-  .menu__profile {
-    display: block;
-    position: relative;
-    border-radius: 50%;
-    background-color: $btnColor;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/profile.svg");
-    margin-top: 24px;
-    margin-right: 42px;
-  }  */
- 
+  
   .menu__tools {
     position: relative;    
     border-radius: 50%;
@@ -90,7 +48,7 @@
     background-image: url("../img/tools.svg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     margin-top: 24px;
     margin-right: 16px;
@@ -112,7 +70,7 @@
     background-image: url("../img/status.svg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     margin-top: 24px;
     margin-right: 24px;
@@ -182,14 +140,7 @@
     }
   
     .menu__burger {
-      position: relative;
-      border-radius: 50%;
-      background-color: $btnColor;
-      background-image: url("../img/burger.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 40px;
-      height: 40px;
+      position: relative;      
       margin: 24px 43px 24px 24px;
     }
   
@@ -253,18 +204,11 @@
       margin-right: 42px;
     }  
   
-    .menu__tools {
-      position: relative;
+    .menu__tools {      
       margin-top: 24px;
       margin-right: 16px;
     }
-    .menu__tools::before{
-      position: absolute;
-      content: "";
-      height: 32px;
-      width: 2px;
-      border-radius: 1px;
-      background-color: $separatorColor;
+    .menu__tools::before{      
       left: -20px;
       top: 3px;
     }
@@ -339,12 +283,7 @@
     .main-menu-nav__link {
       position: relative;
       padding: 5px;
-      padding-right: 48px;
-      line-height: 40px;
-      display: block;
-      text-decoration: none;
-      font-size: 16px;
-      color: #1B1C21;
+      padding-right: 48px;   
       font-weight: 500;
   
       &::after {

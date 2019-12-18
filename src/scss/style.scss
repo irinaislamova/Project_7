@@ -83,6 +83,66 @@ body {
     cursor: pointer;
   }
 }
+.order-btn {
+    border-radius: 20px;
+    background-color: $btnColor;
+    color: $backgroundColor;
+    border: none;
+    padding: 8px 18px 8px 18px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;  
+    img {
+      padding-left: 10px;
+    }
+  } 
+.link-more {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+  text-decoration: none;
+  padding-left: 32px;
+  position: relative;  
+  background-color: transparent;
+  border: none;
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/a.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8px;
+    height: 11px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+  }
+}
+.link-hide {
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+  text-decoration: none;
+  padding-left: 32px;
+  position: relative;
+  background: transparent;
+  border: none;
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/link-hide.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8px;
+    height: 11px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+  } 
+}
 .swiper-container {
   width: 600px;
   height: 300px;

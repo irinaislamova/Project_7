@@ -1,10 +1,9 @@
 @import 'variables.scss';
 
-.dropdown-menu{
-    max-width: 310px;  
-    width: 100%;  
-    min-height: 830px;    
-    overflow-y: scroll; 
+.dropdown-menu{    
+    width: 100%;   
+    max-width: 310px;   
+    height: auto;   
     padding: 19px 24px 34px;
     box-sizing: border-box;
     display: flex;
@@ -69,7 +68,7 @@
     }
   }
   
-  .dropdown-container-footer {
+  .dropdown-menu__container-footer {
     margin-top: 32px;
   }
   
@@ -135,7 +134,7 @@
   
   @media screen and (max-width: 320px) {
     .dropdown-menu {
-      display: block;      
+      display: block;
       padding-left: 16px;
       position: absolute;
       top: 0;
@@ -145,21 +144,19 @@
   }
   
   @media screen and (min-width: 321px) {
-    .dropdown-menu {  
-      display: block;  
+    .dropdown-menu {         
       padding-left: 24px;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
       transform: translateX(-120%);
     }
   
-    .dropdown-container-down {
+    .dropdown-menu__container-footer {
       margin-top: auto;
     }
   }
   
   @media screen and (min-width: 1120px) {
-    .dropdown-menu { 
-      display: block;     
+    .dropdown-menu {       
       position: static;
       padding-left: 27px;      
       box-shadow: none;
@@ -169,7 +166,13 @@
     .dropdown-menu__close {
       display: none;
     }  
-    .dropdown-container-footer {
+    .dropdown-menu__container-footer {
       margin-top: 241px;
     }
+  }
+  @media screen and (max-height: 850px){
+    .dropdown-menu{
+      height: 100%;
+      overflow-y: auto;
+    }    
   }
