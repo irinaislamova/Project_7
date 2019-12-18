@@ -15,7 +15,7 @@
   <body>    
     <div class="container">
   	<section class="dropdown-menu">
-      <div class="dropdown-container-header">
+      <div class="dropdown-menu__container-header">
       <header class="dropdown-menu__header">
         <button class="primary-btn primary-btn--type_close dropdown-menu__close" type="button"></button>
         <a href="#" class="dropdown-menu__logo"><img src="img/logo.svg" alt="Логотип"></a> 
@@ -32,7 +32,7 @@
           <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Контакты</a></li>       
         </ul></nav>
       </div>
-        <div class="dropdown-container-footer">      
+        <div class="dropdown-menu__container-footer">      
           <section class="dropdown-contacts">
           <div class="social-btns">
             <button class="primary-btn btn-call" href="tel:79999999999" title="Позвонить"></button>     
@@ -60,13 +60,13 @@
     <main class="main-container">  
           
       <div class="menu">
-        <div class="menu__burger primary-btn"></div>        
+        <div class="menu__burger"></div>        
         <a href="#" class="menu__icon"><img src="img/logo.svg" alt="Логотип"></a>
         <button class="menu__phone" href="tel:79999999999" title="Позвонить"></button>
         <button class="menu__chat" href="test@gmail.com" title="Написать"></button>
         <div class="menu__profile"></div>        
-        <div class="menu__tools primary-btn"></div>
-        <div class="menu__status primary-btn"></div>
+        <div class="menu__tools"></div>
+        <div class="menu__status"></div>
       </div>
       <div class="main-menu">
         <h1 class="main-menu-title">Услуги и сервисы</h1>
@@ -91,13 +91,13 @@
           <div class="about-us-wrapper__text">
             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
             <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p> 
+            <div class="about-us-wrapper__text--hide" style="display: none;">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error fugit ex eveniet, expedita placeat ad quibusdam quisquam consequuntur accusamus amet molestias commodi excepturi nisi, facilis vel repudiandae provident libero?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error fugit ex eveniet, expedita placeat ad quibusdam quisquam consequuntur accusamus amet molestias commodi excepturi nisi, facilis vel repudiandae provident libero?</p>      
+            </div>
           </div>
-          <button class="link-more about-us-content__button--open" href="#">Читать далее</button>
-          <button class="link-hide about-us-content__button--hide" href="#">Скрыть</button>
-          
-          
+          <button class="link-more about-us-content__button--open">Читать далее</button>
+                             
         </div>
         <img src="img/wall.jpg" alt="Главное изображение" class="about-us-content__img">
       </div>
@@ -136,6 +136,26 @@
       </li>      
       <li class="brands__item">
         <img class="brands__image" src="img/SONY.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>   
+      <li class="brands__item">
+        <img class="brands__image" src="img/Lenovo.svg" alt="Lenovo">  
+        <a class="arrow-btn" href="#"></a>
+      </li>  
+      <li class="brands__item">
+        <img class="brands__image" src="img/SAMSUNG.svg" alt="SAMSUNG">  
+        <a class="arrow-btn" href="#"></a>
+      </li>      
+      <li class="brands__item">
+        <img class="brands__image" src="img/Apple.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>      
+      <li class="brands__item">
+        <img class="brands__image" src="img/ViewSonic.svg" alt="">  
+        <a class="arrow-btn" href="#"></a>
+      </li>     
+      <li class="brands__item">
+        <img class="brands__image" src="img/BOSCH.svg" alt="">  
         <a class="arrow-btn" href="#"></a>
       </li>   
     </div>  
@@ -282,7 +302,7 @@
       <h2 class="callback-modal__title">Заказать звонок</h2>
       <form class="callback-modal__form" action="http://echo.htmlacademy.ru">
         <input class="callback-modal__phone-number" type="tel" placeholder="Телефон">
-        <p class="callback-modal__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+        <p class="callback-modal__text">Нажимая “отправить”, вы даете согласие на <a class="callback__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
         <button class="order-btn callback-modal__button" type="submit">Отправить<img src="img/price-arrow.svg" alt=""></button>
 
       </form>
@@ -296,7 +316,7 @@
         
         <input class="feedback-modal__email" name="feedback-email" type="email" placeholder="Электронная почта">
         <textarea class="feedback-modal__message" name="feedback-message" placeholder="Сообщение"></textarea>
-        <p class="feedback-modal__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+        <p class="feedback-modal__text">Нажимая “отправить”, вы даете согласие на <a class="feedback__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
         
         <button class="order-btn feedback-modal__button" type="submit">Отправить</button>
       </form>
