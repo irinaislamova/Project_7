@@ -13,10 +13,23 @@
     height: 100%;
     box-sizing: border-box;
   }
+  @media screen and (max-width: 310px) {
+    .feedback-modal {
+      max-width: 320px;           
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    }
+  }
+  @media screen and (min-width: 311px) {
+    .feedback-modal {
+      max-width: 440px;
+      width: 100%;
+    }
+  }
   
-  .feedback-modal.transform{
+  .feedback-modal--transform{
     transform: none;
   }
+  
   .feedback-modal__content{  
   overflow-y: auto;
   height: 100%;
@@ -25,12 +38,12 @@
   .feedback-modal__title {
     font-size: 24px;
     line-height: 32px;
-    color: #1B1C21;
+    color: $mainColor;
     font-weight: bold;
     margin-left: 16px;
+    margin-top: 84px;    
     border: 1px solid transparent;
-    position: relative;
-  
+    position: relative;  
     &::before {
       position: absolute;
       content: "";
@@ -43,52 +56,36 @@
     }
   }
   
-  @media screen and (max-width: 310px) {
-    .feedback-modal {
-      max-width: 320px;           
-      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-    }
-  
-    .feedback-modal__form {
-      margin-left: 16px;
-      margin-right: 16px;
-    }
-  
-    .feedback-modal__title {
-      margin-top: 84px;
-      margin-left: 16px;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .feedback-modal {
-      max-width: 440px;
-      width: 100%; 
-      
-    }
-  
-    .feedback-modal__form {
-      margin-left: 32px;
-      margin-right: 32px;
-      margin-top: 24px;
-    }
-  
+  @media screen and (min-width: 441px) { 
     .feedback-modal__title {
       margin-top: 40px;
       margin-left: 32px;
   
-      &::before {
-        position: absolute;
-        content: "";
-        width: 3px;
-        height: 40px;
-        background-color: $highlightColor;
-        border-radius: 2px;
+      &::before {        
         top: 0;
         left: -34px;
       }
     }
   }
+  
+  .feedback-modal__form {
+    box-sizing: border-box;
+    margin-top: 24px;
+  }
+  @media screen and (max-width: 310px) {   
+    .feedback-modal__form {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+  @media screen and (min-width: 311px) {    
+    .feedback-modal__form {
+      margin-left: 32px;
+      margin-right: 32px;      
+    }
+  } 
+ 
+  
   
   .feedback-modal__form {
     input {
@@ -98,7 +95,7 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 24px;
-      color: #b5b6bc;
+      color: $inputColor;
       border: 1px solid $separatorColor;
       border-radius: 8px;
       margin-bottom: 16px;
@@ -124,7 +121,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #b5b6bc;
+    color: $inputColor;
   }
   
   .feedback-modal__button {
@@ -151,33 +148,15 @@
     height: 50px;
     position: absolute;
     top: 16px;
-    left: 24px;
-    background: url("../img/close.svg") no-repeat center;
-  }
-  
-  @media screen and (min-width: 768px) {
-    
-    .feedback-modal__close {
-      position: absolute;
+    left: 24px;    
+  }  
+  @media screen and (min-width: 441px) {    
+    .feedback-modal__close {      
       top: 32px;
-      left: -64px;
-      background: url("../img/close.svg") no-repeat center;
+      left: -64px;     
       margin-bottom: 20px;
     }
   }
-  .primary-btn {
-    /*стандартный стиль для кнопки*/
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: $btnColor;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    &:hover {
-      transform: scale(1.2);
-      cursor: pointer;
-    }
-  }
+
+
   

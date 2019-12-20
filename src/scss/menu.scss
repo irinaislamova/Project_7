@@ -1,150 +1,37 @@
 @import 'variables.scss';
-
-.main-menu-title {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: bold;
-    color: #1B1C21;
-    position: relative;
-    margin: 0;
-    margin-top: 24px;
-  
-    &::before {
-      content: "";
-      position: absolute;
-      width: 3px;
-      height: 40px;
-      background-color: #b8ffec;
-      border-radius: 2px;
-      top: 0;
-      left: -32px;
-    } 
-   }
   
   .menu {
     background-color: $backgroundColor;
     display: flex;
+    box-sizing: border-box;
   }
-  
-  .menu__burger {
-    border-radius: 50%;
-    background-color: $btnColor;
-    background-image: url("../img/burger.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 40px;
-    height: 40px;
-    margin: 24px 17px 24px 16px;
-  }
-  
-  .menu__icon {
-    margin-top: 18px;
-  }
-  
-  .menu__tools {
-    position: relative;    
-    border-radius: 50%;
-    background-color: $btnColor;
-    background-image: url("../img/tools.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 40px;
-    height: 40px;
-    margin-top: 24px;
-    margin-right: 16px;
-  }
-  .menu__tools::before{
-    position: absolute;
-    content: "";
-    height: 32px;
-    width: 2px;
-    border-radius: 1px;
-    background-color: $separatorColor;
-    left: -20px;
-    top: 4px;
-  }
-  
-  .menu__status {
-    border-radius: 50%;
-    background-color: $btnColor;
-    background-image: url("../img/status.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 40px;
-    height: 40px;
-    margin-top: 24px;
-    margin-right: 24px;
-  }
-  
-  .main-menu-nav__link {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: $titleColor;
-    text-decoration: none;
-    padding: 6px 20px;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    display: block;
-  
-    &:hover {
-      background-color: white;
-      border-color: #b8ffec;
-    }
-  }
-  
-  @media screen and (max-width: 320px) {
-    .about-us {
-      padding-left: 0;
-      padding-right: 0;
-      max-width: 320px;
-      width: 100%;
-    }  
-    .menu {
-      background-color: $backgroundColor;
+  @media screen and (max-width: 320px) {    
+    .menu { 
       width: 320px;
     }
-    .menu__phone, .menu__chat, .menu__profile{
-      display: none;
+  }
+  @media screen and (min-width: 321px) {
+    .menu {      
+      width: 100%;     
     }
-    .menu__tools{
-      margin-left: 39px;
-    }    
-  
-    .menu__phone, .menu__chat, .menu__profile, .main-menu-nav__item {
+  }
+  @media screen and (min-width: 1120px){
+    .menu {
       display: none;
-    }
-  
-    .main-menu-title {
-      margin-left: 16px;
-  
-      &::before {
-        content: "";
-        position: absolute;
-        width: 3px;
-        height: 40px;
-        background-color: #b8ffec;
-        border-radius: 2px;
-        top: 0;
-        left: -16px;
-      }
     }
   }
   
-    
-  @media screen and (min-width: 321px) {
-    .menu {      
-      width: 100%;
-      box-sizing: border-box;
-      background-color: $backgroundColor;      
-    }
   
+  .menu__burger{
+    margin: 24px 17px 24px 16px;
+    min-width: 40px;
+  }
+  @media screen and (min-width: 321px) { 
     .menu__burger {
       position: relative;      
       margin: 24px 43px 24px 24px;
-    }
-  
-    .menu__burger::after {
+    
+    &::after {
       position: absolute;
       content: "";
       display: block;
@@ -155,132 +42,198 @@
       top: 3px;
       right: -21px;
     }
+  }
+  }
   
-    .menu__icon {
-      margin-top: 18px;
+  .menu__icon {
+    margin-top: 18px;
+  }
+  @media screen and (min-width: 321px) {
+     .menu__icon {
       margin-right: auto;
     }
+  }
+
   
-    .menu__phone {
-      display: block;
-      border-radius: 50%;
-      background-color: $btnColor;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 40px;
-      height: 40px;
-      background-image: url("../img/phone.svg");
+    .menu__phone{
+      display: none;
+    }
+ 
+  @media screen and (min-width: 321px) {
+    .menu__phone { 
+      display: block;     
       margin-right: 16px;
       margin-top: 24px;
-      margin-left: auto;
-      border: none;
+      margin-left: auto;      
     }
+  } 
+
   
     .menu__chat {
-      border: none;
-      display: block;
-      border-radius: 50%;
-      background-color: $btnColor;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 40px;
-      height: 40px;
-      background-image: url("../img/chat.svg");
+      display: none;
+    }
+  
+  @media screen and (min-width: 321px) {
+    .menu__chat {      
+      display: block;      
       margin-top: 24px;
       margin-right: 16px;
     }
-  
-    .menu__profile {
-      display: block;
-      position: relative;
-      border-radius: 50%;
-      background-color: $btnColor;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 40px;
-      height: 40px;
-      background-image: url("../img/profile.svg");
-      margin-top: 24px;
-      margin-right: 42px;
-    }  
-  
-    .menu__tools {      
-      margin-top: 24px;
-      margin-right: 16px;
-    }
-    .menu__tools::before{      
-      left: -20px;
-      top: 3px;
-    }
-  
-    .menu__status {
-      margin-top: 24px;
-      margin-right: 24px;
-    }
-  
-    .main-menu-title {
-      margin-left: 20px;
-  
-      &::before {
-        content: "";
-        position: absolute;
-        width: 3px;
-        height: 40px;
-        background-color: #b8ffec;
-        border-radius: 2px;
-        top: 0;
-        left: -20px;
-      }
-    }
-  
-    .main-menu-nav__item {
+  }
+
+  @media screen and (max-width: 320px) {
+    .menu__profile{
       display: none;
     }
   }
+  @media screen and (min-width: 321px) {
+    .menu__profile {
+      display: block;
+      position: relative;      
+      margin-top: 24px;      
+    }  
+  }
   
-  @media screen and (min-width: 1120px){
-    .menu {
-      display: none;
+  .menu__tools {
+    position: relative;     
+    min-width: 40px;
+    margin-top: 24px;
+    margin-right: 16px;
+    margin-left: 39px;
+  
+  &::before{
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 2px;
+    border-radius: 1px;
+    background-color: $separatorColor;
+    left: -20px;
+    top: 4px;
+  }  
+}
+  @media screen and (min-width: 321px) {
+    .menu__tools  {      
+      margin-top: 24px;
+      margin-right: 16px;
+    
+    &::before{      
+      left: -20px;
+      top: 3px;
     }
+  }
+  }
   
+  .menu__status {         
+    margin-top: 24px;
+    margin-right: 24px;
+    min-width: 40px;
+  }
+  @media screen and (min-width: 321px) {
+   .menu__status {
+      margin-top: 24px;
+      margin-right: 24px;
+    }
+  }
+
+  @media screen and (min-width: 1120px){  
     .main-menu {
       display: flex;
       padding-top: 42px;
       justify-content: center;
     }
+  }
+
+  .main-menu-title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+    color: $mainColor;
+    font-size: 28px;
+    position: relative;
+    margin: 0;
+    margin-top: 24px;
   
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 40px;
+      background-color: $borderColor;
+      border-radius: 2px;
+      top: 0;
+      left: -32px;      
+    } 
+   }
+   @media screen and (max-width: 320px) { 
     .main-menu-title {
-      font-size: 28px;
-      line-height: 40px;
-      font-weight: bold;
-      color: #1B1C21;
-      position: relative;
+      margin-left: 16px;
+  
+      &::before { 
+        left: -16px;
+      }
+    }
+  }
+  @media screen and (min-width: 321px) {
+    .main-menu-title {
+      margin-left: 20px;
+  
+      &::before {        
+        left: -20px;
+      }
+    }
+  }
+  @media screen and (min-width: 1120px){  
+     .main-menu-title {
       margin: 0;
       margin-left: 30px;
   
       &::before {
-        content: "";
-        position: absolute;
-        width: 3px;
-        height: 40px;
-        background-color: #b8ffec;
-        border-radius: 2px;
-        top: 0;
         left: -32px;
       }
     }
-  
+  }
+
+  @media screen and (min-width: 1120px){ 
     .main-menu-nav {
       display: flex;
       margin-left: auto;
     }
+  }
+
   
+    .main-menu-nav__item {
+      display: none;
+    } 
+    @media screen and (min-width: 1120px){  
     .main-menu-nav__item {
       display: block;
       margin-left: 32px;
+    }  
+    .main-menu-nav__item {
+     &:nth-child(1) a::after {
+       background-image: url("../img/tools.svg");      
+     }
+ 
+     &:nth-child(2) a::after {
+       background-image: url("../img/status.svg");      
+     }   
     }
+ }
+
   
-    .main-menu-nav__link {
+  .main-menu-nav__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: $titleColor;
+    text-decoration: none;
+    padding: 6px 20px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    display: block;  
+  }
+  @media screen and (min-width: 1120px){
+     .main-menu-nav__link {
       position: relative;
       padding: 5px;
       padding-right: 48px;   
@@ -297,20 +250,12 @@
         width: 40px;
         height: 40px;
         position: absolute;
-        top: 5px;
+        top: -2px;
         right: 0;
-      }
-    }
-  
-    .main-menu-nav__item {
-      &:nth-child(1) a::after {
-        background-image: url("../img/tools.svg");
-      }
-  
-      &:nth-child(2) a::after {
-        background-image: url("../img/status.svg");
+        &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
       }
     }
   }
-
-  

@@ -17,9 +17,42 @@
     transition-duration: 3s;
     background-color: $backgroundColor;
   }
-  .dropdown-menu.transform{
+  @media screen and (max-width: 320px) {
+    .dropdown-menu {
+      display: block;
+      padding-left: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 6;
+    }
+  }
+  @media screen and (min-width: 321px) {
+    .dropdown-menu {         
+      padding-left: 24px;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+      transform: translateX(-120%);
+    }
+  }
+  @media screen and (min-width: 1120px) {
+    .dropdown-menu {       
+      position: static;
+      display: block;
+      padding-left: 27px;      
+      box-shadow: none;
+      transform: none;
+      transition: 0s;
+    } 
+  }
+  .dropdown-menu-wrapper{
+    height: 100vh;
+    overflow-y: auto;
+  }
+ 
+  .dropdown-menu--transform{
     transform: none;
   } 
+
   .dropdown-menu__header {
     display: flex;
     align-items: center;
@@ -27,31 +60,33 @@
     margin-top: 15px;
     justify-content: space-between;
   }
-  
-  .primary-btn--type_close{    
-    background: #ff3e79 url("../img/close.svg") no-repeat center;
-    border: none;    
+  .dropdown-menu__close{
     margin-right: 17px;
   }
+  @media screen and (min-width: 1120px) {   
+    .dropdown-menu__close {
+      display: none;
+    } 
+  }   
+  .dropdown-menu__search{
+    margin-right: 5px;
+    margin-left: auto; 
+  }
   
-  .primary-btn--type_search {    
-    background: $btnColor url("../img/search.svg") no-repeat center;
-    border: none;    
-    margin-left: auto;    
-  }  
   .dropdown-nav__link {
     font-size: 16px;
     line-height: 24px;
-    color: #1B1C21;
+    color: $mainColor;
     text-decoration: none;
     display: block;
     margin-top: 8px;
     padding-top: 8px;
     margin-bottom: 8px;
     padding-bottom: 8px;    
-    position: relative;
-  }
+    position: relative;    
+    }
   
+
   .dropdown-nav__link--active {
     color: $titleColor;
   
@@ -60,7 +95,7 @@
       position: absolute;
       width: 4px;
       height: 40px;
-      background-color: #b8ffec;
+      background-color: $borderColor;
       border-radius: 2px;
       top: 0px;
       left: -16px;
@@ -71,38 +106,44 @@
   .dropdown-menu__container-footer {
     margin-top: 32px;
   }
+  @media screen and (min-width: 321px) {   
+    .dropdown-menu__container-footer {
+      margin-top: auto;
+    }
+  }
+  @media screen and (min-width: 1120px) {  
+    .dropdown-menu__container-footer {
+      margin-top: 241px;
+    }
+  }
+  
   
   .social-btns {
     display: flex;
     flex-direction: row;
     margin-bottom: 16px;
   }
-  
-  .btn-call {
-    background-image: url("../img/phone.svg");
+  .dropdown-contacts__call{
+    margin-left: 8px;
     margin-right: 16px;
   }
-  
-  .btn-mail {
-    background-image: url("../img/chat.svg");
+  .dropdown-contacts__mail{
     margin-right: 16px;
   }
-  
-  .btn-profile {
-    background-image: url("../img/profile.svg");
+  .dropdown-contacts__profile{
+    margin-right: 16px;
   }
-  
   .dropdown-contacts-email {
     font-size: 16px;
     line-height: 24px;
-    color: #1b1c21;
+    color: $mainColor;
     text-decoration: none;
   }
   
   .dropdown-contacts-number {
     font-size: 24px;
     line-height: 32px;
-    color: #1b1c21;
+    color: $mainColor;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -123,7 +164,7 @@
   .languages-list__link {
     font-size: 16px;
     line-height: 24px;
-    color: #1b1c21;
+    color: $mainColor;
     text-decoration: none;
     margin-right: 7px;
   
@@ -132,47 +173,8 @@
     }
   }
   
-  @media screen and (max-width: 320px) {
-    .dropdown-menu {
-      display: block;
-      padding-left: 16px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 6;
-    }
-  }
   
-  @media screen and (min-width: 321px) {
-    .dropdown-menu {         
-      padding-left: 24px;
-      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-      transform: translateX(-120%);
-    }
   
-    .dropdown-menu__container-footer {
-      margin-top: auto;
-    }
-  }
-  
-  @media screen and (min-width: 1120px) {
-    .dropdown-menu {       
-      position: static;
-      padding-left: 27px;      
-      box-shadow: none;
-      transform: none;
-      transition: 0s;
-    }  
-    .dropdown-menu__close {
-      display: none;
-    }  
-    .dropdown-menu__container-footer {
-      margin-top: 241px;
-    }
-  }
-  @media screen and (max-height: 850px){
-    .dropdown-menu{
-      height: 100%;
-      overflow-y: auto;
-    }    
-  }
+ 
+ 
+ 

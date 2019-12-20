@@ -50,7 +50,7 @@
     .prices__t-cell {
       font-size: 14px;
       line-height: 18px;
-      color: #1b1c21;
+      color: $mainColor;
       margin-bottom: 16px;
     }
   
@@ -131,9 +131,9 @@
       margin-top: 16px;
       font-size: 14px;
       line-height: 18px;
-      color: #1b1c21;
-      border-left: 16px solid #fff;
-      border-right: 16px solid #fff;
+      color: $mainColor;
+      border-left: 16px solid $backgroundColor;
+      border-right: 16px solid $backgroundColor;
       border-radius: 6px;
       width: 100%;
       box-sizing: border-box;

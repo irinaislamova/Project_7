@@ -1,0 +1,108 @@
+@import 'variables.scss';
+.primary-btn {
+    /*стандартный стиль для кнопки*/
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $btnColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  
+  &--type_close{    
+    background-image: url("../img/close.svg");  
+  }  
+  &--type_search {    
+    background-image: url("../img/search.svg");  
+  } 
+  &--type_call{
+    background-image: url("../img/phone.svg");    
+  }
+  &--type_mail{
+    background-image: url("../img/chat.svg");         
+  }
+  &--type_profile{
+    background-image: url("../img/profile.svg");      
+  }
+  &--type_burger{
+    background-image: url("../img/burger.svg");      
+  }
+  &--type_tools {    
+    background-image: url("../img/tools.svg");
+   }
+   &--type_status {    
+    background-image: url("../img/status.svg");       
+  }
+}
+
+  .order-btn {
+      border-radius: 20px;
+      background-color: $btnColor;
+      color: $backgroundColor;
+      border: none;
+      padding: 8px 18px 8px 18px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;  
+      img {
+        padding-left: 10px;
+      }
+    } 
+  .arrow-btn {
+        display: block;
+        background: url("../img/gob_6.svg") no-repeat;
+        width: 42px;
+        height: 42px;
+  }
+  .link-more {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    text-decoration: none;
+    padding-left: 32px;
+    position: relative;  
+    background-color: transparent;
+    border: none;
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/a.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 8px;
+      height: 11px;
+      position: absolute;
+      top: 7px;
+      left: 10px;
+    }
+  }
+  .link-hide {
+    display: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    text-decoration: none;
+    padding-left: 32px;
+    position: relative;
+    background: transparent;
+    border: none;
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/link-hide.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 8px;
+      height: 11px;
+      position: absolute;
+      top: 7px;
+      left: 10px;
+    } 
+  }

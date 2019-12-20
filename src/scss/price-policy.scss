@@ -1,6 +1,17 @@
 @import 'variables.scss';
-.price-policy {
-  color: #1b1c21;
+
+  .price-policy {
+    color: $mainColor; 
+    max-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 16px;
+  }
+@media screen and (min-width: 321px) {
+  .price-policy {
+    max-width: 420px;
+    padding-left: 24px;
+  }
 }
 
 .price-policy__text {
@@ -13,7 +24,7 @@
   line-height: 24px;
   font-weight: 500;
   text-decoration: none;
-  color: #1b1c21;
+  color: $mainColor;
   position: relative;
 
   &::after {
@@ -28,17 +39,3 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  .price-policy {
-    max-width: 320px;
-    box-sizing: border-box;
-    padding-left: 16px;
-  }
-}
-
-@media screen and (min-width: 321px) {
-  .price-policy {
-    width: 420px;
-    padding-left: 24px;
-  }
-}
