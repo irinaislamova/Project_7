@@ -98,11 +98,16 @@
 }
 @media screen and (min-width: 768px) { 
     padding: 0;   
-  }
-&--hide{
+  }}
+
+.about-us-wrapper__text--hide--open{
+  display: block;
+}
+.about-us-wrapper__text--hide--close{
   display: none;
 }
-}
+
+
 
 
 .about-us-content__img {

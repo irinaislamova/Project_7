@@ -112,8 +112,19 @@
     }  
   }
 
-  .brands__item--hide{
-    display: none;
+
+  
+  .brands--hide {
+    @media screen and (min-width: 321px){
+        & .brands__item:nth-of-type(7+n) {
+            display: none; 
+        }
+    }
+    @media screen and (min-width: 1120px){
+        & .brands__item:nth-of-type(9+n) {
+            display: none; 
+        }
+    }
   }
   
 

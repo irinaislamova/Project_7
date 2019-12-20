@@ -19,17 +19,22 @@ import '../js/swiper.min.js';
 /*Ремонт техники*/
 let tech_button = document.querySelector('.link-more--tech-repair');
 let tech_open = document.querySelector('.tech-repair__arrows-link');
-let tech_item_hide = document.querySelector('.tech-item--hide');
+let tech_item_hide = document.querySelector('.tech-container__item--hide');
 
 tech_button.addEventListener('click', function () {
-	if(tech_button.classList.contains('tech-repair__arrows-link')){
-		tech_button.classList.remove('tech-repair__arrows-link');
-		tech_button.classList.add('tech-repair__arrows-link--hide'); 
+	console.log('test');
+	if(tech_button.classList.contains('tech-repair__arrows-link--open')){
+		tech_button.classList.remove('tech-repair__arrows-link--open');
+		tech_button.classList.remove('link-more');
+		tech_button.classList.add('tech-repair__arrows-link--hide');
+		tech_button.classList.add('link-hide'); 
 		tech_button.textContent = "Скрыть";
+		console.log('1');
 	} else {
 		tech_button.classList.remove('tech-repair__arrows-hide');
 		tech_button.classList.add('tech-repair__arrows-link--link'); 
 		tech_button.textContent = "Показать все (9)";
+		console.log('2');
 	};
 	if(tech_item_hide.style.display == "none"){
 		tech_item_hide.style.display = "block";
@@ -157,13 +162,17 @@ overlay_feedback.addEventListener('click', function(){
 /*Читать далее*/
 
 let button_link = document.querySelector('.link-more');
+let text_hide = document.querySelector('.about-us-wrapper__text--hide');
 
 let main_text_hide = document.querySelector('.about-us-wrapper__text--hide');
 button_link.addEventListener('click', function(){	
-	if(main_text_hide.style.display == "none"){	
-	main_text_hide.style.display = 'block';		
+	if(main_text_hide.classList.contains('about-us-wrapper__text--hide--close')){	
+	main_text_hide.classList.add('about-us-wrapper__text--hide--open');
+	main_text_hide.classList.remove('about-us-wrapper__text--hide--close');	
 	} else {
-		main_text_hide.style.display = 'none';	
+	main_text_hide.classList.add('about-us-wrapper__text--hide--close');
+	main_text_hide.classList.remove('about-us-wrapper__text--hide--open');	
+			
 	};
 	if(button_link.classList.contains('about-us-content__button--open')){
 		 button_link.classList.remove('about-us-content__button--open');

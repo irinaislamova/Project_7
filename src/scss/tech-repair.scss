@@ -108,12 +108,15 @@
     
       .tech-container__item--hide{
         @media screen and (min-width: 321px){
-          &:nth-child(3+n) {
+          &:nth-child(n+7) {
               display: none; 
           }
       }
       @media screen and (min-width: 1120px){
-          &:nth-child(5+n) {
+        &:nth-child(n+7) {
+          display: flex; 
+      }
+          &:nth-child(n+9) {
               display: none; 
           }
       }  
@@ -136,12 +139,12 @@
   }
   
   
-  .tech-repair__arrows-link{
+  .tech-repair__arrows-link--open{
     margin-left: 18px;
     display: none;
   }
   @media screen and (min-width: 321px) {
-    .tech-repair__arrows-link {
+    .tech-repair__arrows-link--open {
       display: block;
     }
   }
