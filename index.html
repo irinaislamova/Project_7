@@ -16,12 +16,13 @@
 
 <body>
   <div class="container">
-    <section class="dropdown-menu">
+    <aside class="dropdown-menu">
+      <div class="dropdown-menu-wrapper">
       <div class="dropdown-menu__container-header">
         <header class="dropdown-menu__header">
           <button class="primary-btn primary-btn--type_close dropdown-menu__close" type="button"></button>
           <a href="#" class="dropdown-menu__logo"><img src="img/logo.svg" alt="Логотип"></a>
-          <button class="primary-btn primary-btn--type_search" type="button"></button>
+          <button class="primary-btn primary-btn--type_search dropdown-menu__search" type="button"></button>
         </header>
         <nav>
           <ul class="dropdown-nav list-reset">
@@ -36,13 +37,13 @@
             <li class="dropdown-nav__item"><a class="dropdown-nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
-      </div>
+      </div>      
       <div class="dropdown-menu__container-footer">
         <section class="dropdown-contacts">
           <div class="social-btns">
-            <button class="primary-btn btn-call" href="tel:79999999999" title="Позвонить"></button>
-            <button class="primary-btn btn-mail" href="mailto:primer@gmail.com" title="Написать"></button>
-            <button class="primary-btn btn-profile" title="Профиль"></button>
+            <button class="primary-btn primary-btn--type_call dropdown-contacts__call" href="tel:79999999999" title="Позвонить"></button>
+            <button class="primary-btn primary-btn--type_mail dropdown-contacts__mail" href="mailto:primer@gmail.com" title="Написать"></button>
+            <button class="primary-btn primary-btn--type_profile dropdown-contacts__profile" title="Профиль"></button>
           </div>
           <a class="dropdown-contacts-email" href="mailto:mail@cps.com">mail@cps.com</a>
           <a class="dropdown-contacts-number" href="tel:88008908900">8 800 890 8900</a>
@@ -58,18 +59,20 @@
             <a class="languages-list__link" href="#">CH</a>
           </li>
         </ul>
+        </div>
+        </div>
 
-      </div>
-    </section>
+      </aside>
+    
     <main class="main-container">
       <div class="menu">
-        <div class="menu__burger"></div>
+        <div class="primary-btn primary-btn--type_burger menu__burger"></div>
         <a href="#" class="menu__icon"><img src="img/logo.svg" alt="Логотип"></a>
-        <button class="menu__phone" href="tel:79999999999" title="Позвонить"></button>
-        <button class="menu__chat" href="test@gmail.com" title="Написать"></button>
-        <div class="menu__profile"></div>
-        <div class="menu__tools"></div>
-        <div class="menu__status"></div>
+        <button class="primary-btn primary-btn--type_call menu__phone" href="tel:79999999999" title="Позвонить"></button>
+        <button class="primary-btn primary-btn--type_mail menu__chat" href="test@gmail.com" title="Написать"></button>
+        <div class="primary-btn primary-btn--type_profile menu__profile"></div>
+        <div class="primary-btn primary-btn--type_tools menu__tools"></div>
+        <div class="primary-btn primary-btn--type_status menu__status"></div>
       </div>
       <div class="main-menu">
         <h1 class="main-menu-title">Услуги и сервисы</h1>
@@ -81,7 +84,7 @@
 
 
       <section class="about-us">
-        <ul class="about-us-nav list-reset">
+        <nav><ul class="about-us-nav list-reset">
           <li class="about-us-nav__item"><a class="about-us-nav__link about-us-nav__link--active" href="#">Ремонтируемые
               бренды</a></li>
           <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Ремонтируемые устройства</a></li>
@@ -89,7 +92,7 @@
           <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Адреса сервисных центров</a></li>
           <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Специальные цены</a></li>
           <li class="about-us-nav__item"><a class="about-us-nav__link" href="#">Отзывы</a></li>
-        </ul>
+        </ul></nav>
         <div class="about-us-content">
           <div class="about-us-wrapper">
             <div class="about-us-wrapper__text">
@@ -98,7 +101,7 @@
               <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
                 количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
                 очередь, советуют нас родным и близким.</p>
-              <div class="about-us-wrapper__text--hide" style="display: none;">
+              <div class="about-us-wrapper__text--hide">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error fugit ex eveniet, expedita
                   placeat ad quibusdam quisquam consequuntur accusamus amet molestias commodi excepturi nisi, facilis
                   vel repudiandae provident libero?</p>
@@ -145,6 +148,7 @@
             <img class="brands__image" src="img/ACER.svg" alt="">
             <a class="arrow-btn" href="#"></a>
           </li>
+          <div class="brands__item--hide"></div>
           <li class="brands__item">
             <img class="brands__image" src="img/SONY.svg" alt="">
             <a class="arrow-btn" href="#"></a>
@@ -168,12 +172,12 @@
           <li class="brands__item">
             <img class="brands__image" src="img/BOSCH.svg" alt="">
             <a class="arrow-btn" href="#"></a>
-          </li>
+          </li>          
         </div>
         
         <div class="pagination brands-pagination"></div>
-        <button class="link-more brands__link--open" href="#">Показать все</button>
-        <button class="link-hide brands__link--hide" href="#" style="display: none;">Скрыть</button>
+        <button class="link-more link-more--brands brands__link--open" href="#">Показать все</button>
+        
 
       </section>
       <section class="tech-repair" id="repair-devices">
@@ -217,8 +221,8 @@
           </div>
         </div>
         <div class="pagination tech-repair-pagination"></div>
-        <button class="link-more tech-repair__arrows-link" href="#">Показать все (9)</button>
-        <button class="link-hide tech-repair__arrows-link--hide">Скрыть</button>
+        <button class="link-more link-more--tech-repair tech-repair__arrows-link" href="#">Показать все (9)</button>
+        
       </section>
       <section class="prices">
         <h2 class="prices__title page-title">ЦЕНЫ НА УСЛУГИ</h2>
@@ -320,7 +324,7 @@
 
         </form>
       </div>
-      <button class="primary-btn primary-btn--close callback-modal__close" type="button"></button>
+      <button class="primary-btn primary-btn--type_close callback-modal__close" type="button"></button>
     </section>
     <section class="feedback-modal">
       <div class="feedback-modal__content">
@@ -338,7 +342,7 @@
           <button class="order-btn feedback-modal__button" type="submit">Отправить</button>
         </form>
       </div>
-      <button class="primary-btn primary-btn--close feedback-modal__close" type="button"></button>
+      <button class="primary-btn primary-btn--type_close feedback-modal__close" type="button"></button>
     </section>
   </div>
   <div class="overlay"></div>
