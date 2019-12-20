@@ -615,8 +615,13 @@ body {
     .brands__item:nth-of-type(3n) {
       margin-right: 0px; } }
 
-.brands__item--hide {
-  display: none; }
+@media screen and (min-width: 321px) {
+  .brands--hide .brands__item:nth-of-type(7 + n) {
+    display: none; } }
+
+@media screen and (min-width: 1120px) {
+  .brands--hide .brands__item:nth-of-type(9 + n) {
+    display: none; } }
 
 .brands__link--open {
   margin-left: 18px; }
@@ -1452,8 +1457,12 @@ textarea::placeholder, input::placeholder {
   @media screen and (min-width: 768px) {
     .about-us-wrapper__text {
       padding: 0; } }
-  .about-us-wrapper__text--hide {
-    display: none; }
+
+.about-us-wrapper__text--hide--open {
+  display: block; }
+
+.about-us-wrapper__text--hide--close {
+  display: none; }
 
 .about-us-content__img {
   width: 50%;
@@ -2157,11 +2166,15 @@ template, [hidden] {
       display: flex; } }
 
 @media screen and (min-width: 321px) {
-  .tech-container__item--hide:nth-child(3 + n) {
+  .tech-container__item--hide:nth-child(n+7) {
     display: none; } }
 
 @media screen and (min-width: 1120px) {
-  .tech-container__item--hide:nth-child(5 + n) {
+  .tech-container__item--hide:nth-child(n+7) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .tech-container__item--hide:nth-child(n+9) {
     display: none; } }
 
 .tech-container__title {
@@ -2177,12 +2190,12 @@ template, [hidden] {
   -ms-flex-item-align: end;
       align-self: flex-end; }
 
-.tech-repair__arrows-link {
+.tech-repair__arrows-link--open {
   margin-left: 18px;
   display: none; }
 
 @media screen and (min-width: 321px) {
-  .tech-repair__arrows-link {
+  .tech-repair__arrows-link--open {
     display: block; } }
 
 .tech-repair__arrows-link--hide {
