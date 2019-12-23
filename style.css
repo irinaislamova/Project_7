@@ -1358,7 +1358,7 @@ textarea::placeholder, input::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 27px; } }
+    margin-left: 20px; } }
 
 .main-menu-nav__link {
   font-size: 16px;
