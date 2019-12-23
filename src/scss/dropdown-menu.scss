@@ -46,8 +46,11 @@
   }
   .dropdown-menu-wrapper{
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: auto;     
+  @media screen and (min-width: 1120px){      
+    overflow-y: visible;
   }
+}
  
   .dropdown-menu--transform{
     transform: none;
