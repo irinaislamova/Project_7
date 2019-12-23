@@ -991,7 +991,7 @@ textarea::placeholder, input::placeholder {
   width: 100%;
   max-width: 310px;
   height: auto;
-  padding: 19px 24px 34px;
+  padding: 19px 16px 34px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1051,6 +1051,9 @@ textarea::placeholder, input::placeholder {
 .dropdown-menu-wrapper {
   height: 100vh;
   overflow-y: auto; }
+  @media screen and (min-width: 1120px) {
+    .dropdown-menu-wrapper {
+      overflow-y: visible; } }
 
 .dropdown-menu--transform {
   -webkit-transform: none;
@@ -1108,6 +1111,12 @@ textarea::placeholder, input::placeholder {
     top: 0px;
     left: -16px;
     display: block; }
+  @media screen and (min-width: 321px) {
+    .dropdown-nav__link--active::before {
+      left: -24px; } }
+  @media screen and (min-width: 1120px) {
+    .dropdown-nav__link--active::before {
+      left: -27px; } }
 
 .dropdown-menu__container-footer {
   margin-top: 32px; }
@@ -1381,11 +1390,11 @@ textarea::placeholder, input::placeholder {
       position: absolute;
       top: -2px;
       right: 0; }
-      .main-menu-nav__link::after:hover {
-        -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-                transform: scale(1.2);
-        cursor: pointer; } }
+    .main-menu-nav__link:hover::after {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2);
+      cursor: pointer; } }
 
 .about-us {
   width: 100%;
