@@ -106,7 +106,7 @@
     }
   }  
     
-      .tech-container__item--hide{
+      .tech-container__item--hide--close{
         @media screen and (min-width: 321px){
           &:nth-child(n+7) {
               display: none; 
@@ -120,8 +120,22 @@
               display: none; 
           }
       }  
-      }      
-    
+      }  
+      .tech-container__item--hide--open{
+        @media screen and (min-width: 321px){
+          &:nth-child(n+7) {
+              display: flex; 
+          }
+      }
+      @media screen and (min-width: 1120px){
+        &:nth-child(n+7) {
+          display: flex; 
+      }
+          &:nth-child(n+9) {
+              display: flex; 
+          }
+      }  
+      }    
   
 
   .tech-container__title {
@@ -138,21 +152,18 @@
     align-self: flex-end;    
   }
   
-  
-  .tech-repair__arrows-link--open{
+  /*Кнопки*/
+  .tech-repair__button--open{
     margin-left: 18px;
     display: none;
   }
   @media screen and (min-width: 321px) {
-    .tech-repair__arrows-link--open {
+    .tech-repair__button--open {
       display: block;
     }
   }
-  
-
-  .tech-repair__arrows-link--hide{
-      margin-left: 18px;
-      display: none;
+  .tech-repair__button--hide{
+      margin-left: 18px;      
   } 
  
   

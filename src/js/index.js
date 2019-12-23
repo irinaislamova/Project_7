@@ -17,70 +17,73 @@ import '../scss/swiper.min.scss';
 import '../js/swiper.min.js';
 
 /*Ремонт техники*/
-let tech_button = document.querySelector('.link-more--tech-repair');
-let tech_open = document.querySelector('.tech-repair__arrows-link');
-let tech_item_hide = document.querySelector('.tech-container__item--hide');
+let tech_button = document.querySelector('.tech-repair__button');
+let tech_button_open = document.querySelector('.tech-repair__button--open');
+let tech_item = document.querySelectorAll('.tech-container__item');
+console.log(tech_item);
 
 tech_button.addEventListener('click', function () {
-	console.log('test');
-	if(tech_button.classList.contains('tech-repair__arrows-link--open')){
-		tech_button.classList.remove('tech-repair__arrows-link--open');
+
+	if(tech_button.classList.contains('tech-repair__button--open')){
+		tech_button.classList.remove('tech-repair__button--open');		
+		tech_button.classList.add('tech-repair__button--hide');
 		tech_button.classList.remove('link-more');
-		tech_button.classList.add('tech-repair__arrows-link--hide');
 		tech_button.classList.add('link-hide'); 
-		tech_button.textContent = "Скрыть";
-		console.log('1');
+		
+		tech_button.textContent = "Скрыть";		
 	} else {
-		tech_button.classList.remove('tech-repair__arrows-hide');
-		tech_button.classList.add('tech-repair__arrows-link--link'); 
-		tech_button.textContent = "Показать все (9)";
-		console.log('2');
+		tech_button.classList.remove('tech-repair__button--hide');
+		tech_button.classList.add('tech-repair__button--open'); 
+		tech_button.classList.remove('link-hide');
+		tech_button.classList.add('link-more');
+
+		tech_button.textContent = "Показать все (9)";		
 	};
-	if(tech_item_hide.style.display == "none"){
-		tech_item_hide.style.display = "block";
-	} else {
-		tech_item_hide.style.display = "none";
+	for(var i = 0; i <  tech_item.length; i++){
+				
+		if(tech_item[i].classList.contains('tech-container__item--hide--close')){
+			tech_item[i].classList.remove('tech-container__item--hide--close');
+			tech_item[i].classList.add('tech-container__item--hide--open');
+		} else {
+			tech_item[i].classList.remove('tech-container__item--hide--open');
+			tech_item[i].classList.add('tech-container__item--hide--close');
+		};		
 	};
+	
 });
 
 
 /*Бренды*/
-let brand_link = document.querySelector('.link-more--brands');
-let brand_open = document.querySelector('.brands__link--open');
-let brand_container = document.querySelector('.brands__container');
-let brand_item_hide = document.querySelector('.brands__item--hide');
-brand_open.addEventListener('click', function () {
-	if(brand_item_hide.style.display == "none"){
-		brand_item_hide.style.display = "block";
+let brands_button = document.querySelector('.brands__button');
+let brands_button_open = document.querySelector('.brands__button--open');
+let brands_item = document.querySelectorAll('.brands__item');
+
+brands_button.addEventListener('click', function () {	
+	if(brands_button.classList.contains('brands__button--open')){
+		brands_button.classList.remove('brands__button--open');
+		brands_button.classList.add('brands__button--hide');
+		brands_button.classList.remove('link-more');
+		brands_button.classList.add('link-hide');		
+		brands_button.textContent = "Скрыть";
 	} else {
-		brand_item_hide.style.display = "none";
+		brands_button.classList.remove('brands__button--hide');
+		brands_button.classList.add('brands__button--open');
+		brands_button.classList.remove('link-hide');
+		brands_button.classList.add('link-more');		
+		brands_button.textContent = "Показать все";
 	};
-	if(brand_link.classList.contains('brands__link--open')){
-		brand_link.classList.remove('brands__link--open');
-		brand_link.classList.add('brands__link--hide');
-		brand_link.textContent = "Скрыть";
-	} else {
-		brand_link.classList.remove('brands__link--hide');
-		brand_link.classList.add('brands__link--open');
-		brand_link.textContent = "Показать все";
+	for(var i = 0; i < brands_item.length; i++){
+		if(brands_item[i].classList.contains('brands__item--hide--close')){
+			brands_item[i].classList.remove('brands__item--hide--close');
+			brands_item[i].classList.add('brands__item--hide--open');
+		} else {
+			brands_item[i].classList.remove('brands__item--hide--open');
+			brands_item[i].classList.add('brands__item--hide--close');
+		};		
 	};
 });
-/*let brand_open = document.querySelector('.brands__link--open');
-let brand_container = document.querySelector('.brands__container');
-let brand_hide = document.querySelector('.brands__link--hide');
-brand_open.addEventListener('click', function () {
-	brand_open.style.display = 'none';
-	brand_hide.style.display = 'block';
-	brand_container.style.height = 'auto';
-	brand_container.style.overflow = 'visible';
-});
-brand_hide.addEventListener('click', function () {
-	brand_hide.style.display = 'none';
-	brand_open.style.display = 'block';
-	brand_container.style.height = '156px';	
-	brand_container.style.overflow = 'hidden';	
-});
-*/
+
+
 
 /*Обратный звонок*/
 let btn_call = document.querySelector('.primary-btn--type_call');

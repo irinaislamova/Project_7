@@ -53,11 +53,9 @@
     .brands__container {
       flex-wrap: wrap;
       flex-direction: row;
-      max-width: 816px;
-      max-height: 156px;
+      max-width: 816px;      
       margin-bottom: 8px;
-      overflow-x: visible;
-      overflow-y: hidden;     
+      overflow-x: visible;         
       padding-right: 24px;
       margin-left: auto;
       margin-right: auto;
@@ -65,10 +63,8 @@
   }
   @media screen and (min-width: 1120px) {    
     .brands__container {     
-      max-width: 1120px;
-      max-height: 176px;
-      margin-bottom: 8px;
-      overflow: hidden;      
+      max-width: 1120px;      
+      margin-bottom: 8px;         
       padding-right: 0;
     }
   }
@@ -113,38 +109,50 @@
   }
 
 
-  
-  .brands--hide {
+  .brands__item--hide--close{
     @media screen and (min-width: 321px){
-        & .brands__item:nth-of-type(7+n) {
-            display: none; 
-        }
-    }
-    @media screen and (min-width: 1120px){
-        & .brands__item:nth-of-type(9+n) {
-            display: none; 
-        }
-    }
+      &:nth-child(n+7) {
+          display: none; 
+      }
   }
-  
+  @media screen and (min-width: 1120px){
+    &:nth-child(n+7) {
+      display: flex; 
+  }
+      &:nth-child(n+9) {
+          display: none; 
+      }
+  }  
+  }  
+  .brands__item--hide--open{    
+    @media screen and (min-width: 321px){
+      &:nth-child(n+7) {
+          display: flex; 
+      }
+  }
+  @media screen and (min-width: 1120px){
+    &:nth-child(n+7) {
+      display: flex; 
+  }
+      &:nth-child(n+9) {
+          display: flex; 
+      }
+  }  
+  }    
 
-  .brands__link--open {    
-    margin-left: 18px;    
-  }
-  @media screen and (max-width: 320px) {   
-    .brands__link--open {
-      display: none;      
-    }
+  
+  /*Кнопки*/
+  .brands__button--open {    
+    margin-left: 18px;   
+    display: none;  
   }
   @media screen and (min-width: 321px) {   
-    .brands__link--open {
+    .brands__button--open {
       display: block;
     }
   }  
-
-  .brands__link--hide{
-    margin-left: 18px; 
-    display: none;    
+  .brands__button--hide{
+    margin-left: 18px;        
   }
   
   

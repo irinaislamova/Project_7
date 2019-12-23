@@ -83,7 +83,11 @@
     padding-top: 8px;
     margin-bottom: 8px;
     padding-bottom: 8px;    
-    position: relative;    
+    position: relative;   
+    &:hover, &:focus {
+      text-decoration: underline;;
+      cursor: pointer;
+    } 
     }
   
 

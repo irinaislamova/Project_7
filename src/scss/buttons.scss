@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    &:hover {
+    &:hover, &:focus {
       transform: scale(1.2);
       cursor: pointer;
     }
@@ -60,6 +60,10 @@
         background: url("../img/gob_6.svg") no-repeat;
         width: 42px;
         height: 42px;
+        &:hover, &:focus {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
   }
   .link-more {
     font-size: 16px;
@@ -82,9 +86,12 @@
       top: 7px;
       left: 10px;
     }
+    &:hover, &:focus {
+      text-decoration: underline;;
+      cursor: pointer;
+    }
   }
-  .link-hide {
-    display: none;
+  .link-hide {   
     font-size: 16px;
     line-height: 24px;
     color: #1B1C21;
@@ -105,4 +112,8 @@
       top: 7px;
       left: 10px;
     } 
+    &:hover, &:focus {
+      text-decoration: underline;;
+      cursor: pointer;
+    }
   }

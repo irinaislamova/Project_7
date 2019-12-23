@@ -231,6 +231,10 @@
     border: 2px solid transparent;
     border-radius: 6px;
     display: block;  
+    &:hover, &:focus {
+      text-decoration: underline;;
+      cursor: pointer;
+    }
   }
   @media screen and (min-width: 1120px){
      .main-menu-nav__link {

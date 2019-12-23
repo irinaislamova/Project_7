@@ -6,6 +6,10 @@
     width: 100%;
     box-sizing: border-box;
     padding-left: 16px;
+    &:hover, &:focus {
+      text-decoration: underline;;
+      cursor: pointer;
+    }
   }
 @media screen and (min-width: 321px) {
   .price-policy {
