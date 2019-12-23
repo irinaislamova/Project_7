@@ -4,7 +4,7 @@
     width: 100%;   
     max-width: 310px;   
     height: auto;   
-    padding: 19px 24px 34px;
+    padding: 19px 16px 34px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -107,6 +107,16 @@
       top: 0px;
       left: -16px;
       display: block;
+    }
+    @media screen and (min-width: 321px){
+      &::before {        
+        left: -24px;        
+      } 
+    }
+    @media screen and (min-width: 1120px){
+      &::before {        
+        left: -27px;        
+      } 
     }
   }
   

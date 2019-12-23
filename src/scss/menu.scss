@@ -256,10 +256,11 @@
         position: absolute;
         top: -2px;
         right: 0;
-        &:hover {
+      }
+        &:hover::after {
           transform: scale(1.2);
           cursor: pointer;
         }
-      }
+     
     }
   }
